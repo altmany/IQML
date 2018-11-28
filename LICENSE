@@ -1,0 +1,45 @@
+IQML Software License Agreement
+
+This Software License Agreement (“Agreement”) is entered into by and between Octahedron Ltd., 25 Ein Shemesh Street, Ganey Tikva 55900 Israel, (“Licensor”) and you (“Licensee).
+
+WHEREAS Licensor is the owner of the Licensed Software known as “IQML”; 
+WHEREAS Licensee desires that Licensor grant to Licensee a license in respect of the Licensed Software and Licensor is willing to grant such a license. 
+
+NOW, THEREFORE, the Parties mutually agree as follows: 
+
+1. Definitions 
+1.1 “Intellectual Property Rights” means all intellectual property rights worldwide including, without limitation, all (i) patents, patent applications and patent rights; (ii) rights associated with works of authorship including copyrights, copyright applications, copyright registrations, mask work rights applications and registrations; (iii) rights relating to the protection of trade secrets and confidential information; 
+1.2 “Affiliate” means any entity to any degree owned or controlled by either Party.
+1.3 “Licensee Parties” means Licensee, his Affiliates and their respective shareholders, directors, officers, employees and agents. 
+1.4 “Licensed Software” means software and related material developed by Licensor for the purpose of delivery of information on financial securities from DTN IQFeed, including without limitation, all source code, object code, techniques, documentation, or similar material related thereto, all updates, upgrades, derivations and modifications to any of the foregoing, and all Intellectual Property Rights related thereto. 
+1.5 “Licensor Parties” means Licensor, his Affiliates and their respective shareholders, directors, officers, employees and agents. 
+
+2. License 
+2.1 Grant of License. Subject to the terms and conditions of this Agreement, Licensor hereby grants to Licensee and his Affiliates a worldwide, irrevocable, non-exclusive, non-transferable right and license to install, store, use, and copy, the Licensed Software for a single year, on any single computer of the Licensee’s choice, without restriction as to purpose(s), or method(s) by which Licensee exercises any rights granted hereunder. 
+2.2 All Other Rights are Reserved. All rights not granted to Licensee hereunder are reserved to Licensor and, except as expressly provided in this Agreement, no other right or license is to be implied by or inferred from any provision of this Agreement or by the conduct of the Parties. Subject only to the Licensor’s explicit commitments contained herein, nothing shall limit or restrict the Licensor’s right to use, sell, lease, license, transfer or otherwise grant or dispose of Licensed Software, in whole or in part, itself or to or through any other person, company, or entity and whether or not the exercise of such right might compete with any Licensee product or service.
+2.3 Limitations of License. Notwithstanding the above, Licensee may not (a) modify, translate, decompile, disassemble, or reverse engineer the Licensed Software; (b) publish or provide the Licensed Software to any third party without prior written consent from Licensor; (c) rent, lease, grant a security interest in, or otherwise transfer rights to the Licensed Software. 
+
+3. License Fee. 
+3.1 In consideration for the license granted in Section 2.1, Licensee shall pay Licensor the fee specified on the Licensed Software’s product page (http://UndocumentedMatlab.com/IQML) at the time of License purchase, such fee being subject to change from time to time without prior notice. 
+3.2 Notwithstanding the above, Licensor waives the license fee for Licensee usage of the license during a single period of up to 30 calendar days ("Trial Period").
+
+4. Ownership 
+4.1 Acknowledgement of Ownership. Licensee, on behalf of himself, his Affiliates and their respective successors and assigns, agrees and acknowledges that the Licensed Software, including any copyright, patent, trade secret, trademark, trade name or other intellectual property right, is the sole and exclusive property of Licensor. 
+4.2 Confidentiality. Licensee, on behalf of himself, his Affiliates and their respective successors and assigns, agrees and acknowledges that the Licensed Software shall not be publically distributed or made available to any external party by any means, either electronically or otherwise. Licensee agrees to keep adequate reasonable means to keep the Licensed Software confidential.
+
+5. Assignment 
+5.1 Assignment by Licensee. Licensee, his Affiliates and each of their permitted assigns may assign any or all of their rights or delegate any or all of their duties under this Agreement to an Affiliate or to an employer of Licensee. 
+5.2 Assignment by Licensors. Licensor may sell, assign, or otherwise transfer this Agreement, the Licensed Software, or any rights hereunder to its Affiliate or any third party, provided that: (a) Licensor provides such Affiliate or third party with prior notice of the existence of this Agreement; and (b) such Affiliate or third party agrees to be bound by the terms and conditions, including all licenses and covenants set forth in this Agreement. 
+
+6. Relationship between Licensor and Licensee. Licensor’s relationship with Licensee will be that of an independent contractor, and nothing in this Agreement should be construed to create a partnership, joint venture, or employer-employee relationship. Neither Licensor nor Licensee (a) is an agent of the other party; (b) is not authorized to make any representation, contract, or commitment on behalf of the other party; (c) will not be entitled to any of the benefits that other party makes available to its employees, and waives the right to receive any such benefits. 
+
+7. LIMITATION OF LIABILITY. THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND/OR NONINFRINGEMENT. 
+THERE IS NEITHER GUARANTEE THAT THE SOFTWARE IS COMPLETE OR ERROR-FREE, NOR THAT IT MEETS THE USER’S NEEDS, NOR THAT IT WILL WORK AS EXPECTED, OR AT ALL, AT ANY GIVEN TIME OR SETUP. 
+LICENSEE MUST VERIFY THE BEHAVIOR CAREFULLY BEFORE USING THIS SOFTWARE FOR LIVE TRADES, AND MUST EITHER USE THIS SOFTWARE AT THEIR OWN RISK, OR NOT AT ALL.
+LICENSOR TAKES ABSOLUTELY NO RESPONSIBILITY FOR POSSIBLE CONSEQUENCES DUE TO USE OF THE SOFTWARE. IN NO EVENT SHALL THE LICENSOR BE LIABLE FOR ANY CLAIM, DAMAGES, LOSS, OR OTHER LIABILITY, WHETHER IN ACTION OF CONTRACT OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE LICENSED SOFTWARE, OR THE USE OR OTHER DEALINGS IN THE LICENSED SOFTWARE, REGARDLESS OF FORM OF CLAIM OR WHETHER LICENSOR WAS ADVISED OF SUCH LIABILITIES. 
+ALL TRADING SYMBOLS AND TRADING ORDERS DISPLAYED IN THE DOCUMENTATION ARE FOR ILLUSTRATIVE PURPOSES ONLY AND DO NOT PORTRAY A TRADING RECOMMENDATION.
+
+8. Governing Law. This Agreement shall be governed by and construed in accordance with the laws of the State of Israel. Licensee consents to venue and jurisdiction in courts in the Tel Aviv District, Israel.
+
+9. Entire Agreement. This Agreement constitutes the entire agreement between Licensee and Licensor and supersedes any prior agreement, whether oral or written, relating to the subject matter of this Agreement.
+WHEREFORE, the Parties hereto acknowledge that they have read and understand this Agreement, voluntarily accept the duties and obligations set forth herein and each has executed or caused this Agreement to be executed by its duly authorized representative. 

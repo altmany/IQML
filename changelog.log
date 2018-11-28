@@ -1,0 +1,178 @@
+2.11 (2018-11-28)
+  - [4.5] Added Greek fields Omega, Lambda, CRho, Color, Annual_Factor_Used
+          Fixed Greek fields Vega, Rho, Veta, Ultima (compatibility with Financial Toolbox & NAG)
+          Renamed parameters: Duration=>DaysToExpiration; DaysPerYear=>AnnualFactor
+
+2.10 (2018-11-14)
+  - [2.4] Added ability to revert back to the previous IQML version at any time
+  - [4.1] Added fields for Bid/Ask/Last market names in quote query, when provided by IQFeed
+  - [4.5] Added calculation of option Greeks, fair value, implied volatility (Professional license)
+
+2.09 (2018-11-07)
+  - [3.1] Fixed bug in parsing input parameters in struct format
+
+2.08 (2018-10-28)
+  - [5.*] Enabled parallelized historic data queries having date/time range (Professional license)
+
+2.07 (2018-10-21)
+  - [5.4] Enabled using MaxDays as synonym for the Days parameter in historic interval queries
+  - [9.1] Fixed a problem with the license validation that prevented connection in certain cases
+  - [9.4] Fixed a few small edge-cases with sending custom commands to IQFeed
+
+2.06 (2018-10-15)
+  - [6.1] Minor fixes and slight performance speedup of streaming quotes
+
+2.05 (2018-10-13)
+  - [4.1] Enabled setting and ordering of snapshot  quote fields (Professional license)
+  - [6.1] Enabled setting and ordering of streaming quote fields (Professional license)
+
+2.04 (2018-10-02)
+  - [5,7] Improved download speed of historical data and news queries
+  - [6.*] LatestEventTimestamp now reported in 1-sec resolution, unless Debug is 1/true
+
+2.03 (2018-09-30)
+  - [9.1] Fixed a problem with the license check that caused IQFeed disconnections
+
+2.02 (2018-09-13)
+  - [4.3] Added warning when violating IQFeed's allowed interval bar sizes (streaming/blocking/historic)
+  - [9.1] Added detection & report for a case of a non-communicative background IQConnect process
+
+2.00 (2018-09-05) - major update
+  - Highlights: query parallelization and multiple usability/functionality fixes/improvements
+  - [*.*] Enabled query parallelization (Professional license)
+  - [*.*] Enabled specifying dates and date-times using Matlab datetime objects
+  - [2.1] Added the license type to the output of IQML('version')
+  - [3.5] All returned data arrays are now column vectors for consistency
+  - [3.5] Using the 2nd (optional) output of IQML (errorMsgs) now implies RaiseErrorMsgs=false
+  - [4.1] Issued a warning when requesting more symbol quotes than your IQFeed account limit
+  - [4.*] Modified reported data format when NumOfEvents>1, for consistency with other queries
+  - [4.3] Added new blocking interval-bars functionality (in addition to streaming bars)
+  - [6.*] Added Symbol field to returned streaming data struct
+  - [7.4] Story count for symbols that have no related news story is now reported as 0
+  - [9.3] Added Exchanges, ServerVersion, ServiceType fields to client stats data
+  - [11]  Fixed various things with the Alerts functionality
+
+1.24 (2018-08-31)
+  - [3.2] Limited the Timeout parameter value to 0-9000 [secs], with 0 meaning infinite
+  - [8.2] Enabled specifying options chain NearMonths of 0-99, not just 0-12
+  - [9.1] Enabled multiple Matlab processes on same computer to run IQML concurrently (Beta)
+
+1.23 (2018-08-14)
+  - [9.1] Fixed a problem of possible bad connection during initial connection
+
+1.22 (2018-08-13)
+  - [3.2] Limited the Timeout parameter value to 0-3000 [secs]
+  - [7.2] Fixed: when fetching multiple stories, an error in one does not stop processing others
+  - [7.3] Fixed edge-case of news story lines that start with "69," (very rare)
+  - [8.2] Enabled specifying options chain NearMonths of 0-12, not just 0-4
+
+1.21 (2018-08-09)
+  - [8.1] Enabled looking up symbols by market(s) and/or security-type(s)
+
+1.20 (2018-08-07)
+  - [5.*] Enabled requesting history data for multiple symbols in a single IQML command
+  - [5.*] Automatically fix BeginDate<=>BeginDateTime, EndDate<=>EndDateTime in history queries
+
+1.19 (2018-08-06)
+  - [3.2] Added RaiseErrorMsgs parameter to control if IQFeed errors should raise a Matlab error
+
+1.181 (2018-08-05)
+  - [7.2] Fixed edge-case of a news item that has an empty headline (very rare)
+
+1.18 (2018-08-03)
+  - [3.1] Added optional errorMsg output for IQML commands
+  - [9.1] Fixed a problem of duplicate fields during initial connection
+  - [9.1] Improved reliability of programmatic IQFeed disconnect/reconnect
+
+1.17 (2018-07-30)
+  - [6.*] Enabled retrieval/cancellation of multiple/all streaming symbols in a single IQML command
+
+1.16 (2018-07-09)
+  - [5.*] Significantly improved the performance (speed) of all historical data queries
+
+1.15 (2018-07-08)
+  - [4.1] Enabled querying snapshot (top of market) data of multiple symbols at once
+  - [4.2] Fixed: querying multi-symbol fundamental data sometimes returned empty results
+  - [6.1] Enabled querying streaming top-of-market data of multiple symbols at once
+  - [6.*] Fixed: debug data displayed when streaming queries requested (now only if 'debug'=1)
+  - [8.2] Enabled querying snapshot (top of market) data of entire options/futures chain at once
+  - [8.2] Enabled querying fundamental data of all symbols in an options/futures chain at once
+  - [9.1] Fixed: IQML query during IQFeed connection sometimes returned empty/error results
+
+1.14 (2018-05-30)
+  - [4.2] Enabled specifying multiple Symbols in a single Fundamental-data query
+  - [6.2] Enabled specifying multiple Symbols in a single streaming Regional updates query
+  - [7.3] Enabled specifying multiple ID values in a single news story query
+
+1.131 (2018-05-27)
+  - [3.1] Fixed bug in accepting struct-based input parameters
+  - [7.2] Fixed bug in the news headlines functionality
+
+1.13 (2018-05-25)
+  - [12]  Added regional updates alert functionality (in addition to news/quote/intervalbar alerts)
+  - [12]  Enabled reporting the full news story (in addition to headline) in news alerts
+  - [7.2] Enabled auto-fetch of full news story in news headlines query (streaming/blocking)
+
+1.12 (2018-05-23)
+  - [12] Added alerts functionality (news/quote/intervalbar events via popup/console/email/callback)
+
+1.112 (2018-05-17)
+  - [9.1] Fixed a problem with IQFeed login
+
+1.11 (2018-05-16)
+  - [4.3, 6.4, 10.5] Added Market Depth (Level 2) functionality
+
+1.10 (2018-05-04)
+  - [2.4] User Guide additions (no functionality update)
+
+1.09 (2018-04-16)
+  - [6.3] Added Interval Bars functionality
+
+1.08 (2018-04-11)
+  - [4.1, 6.1] Added the Symbol field to returned quotes data struct
+
+1.07 (2018-04-10)
+  - [9.1] Added informational messages on server connection/disconnection
+  - [6.1] Fixed bug in streaming quotes
+
+1.06 (2018-04-08)
+  - [8.2] Added complete options/futures-chain lookup functionality
+
+1.05 (2018-04-05)
+  - [8.1] Added symbols scan functionality
+  - [8.3-8.7] Added numeric codes (market info) lookup functionality
+  - [9.1] Added ability to specify IQFeed Username,Password
+  - [9.1] Added a 10-sec timeout on connection attempts to IQFeed
+  - [9.3] Added extra port-specific stats when AddPortStats=1
+  - [8.2] Added basic support for options/futures-chain lookup (full support next version)
+  - [3-7] Modified the default Timeout value from 3 to 5 [secs]
+  - Bug fixes
+
+1.04 (2018-04-01)
+  - [7.5] Added streaming news headlines functionality
+  - [6.2] Added streaming regional updates functionality
+  - [2.1] Added support for native Mac IQFeed client (untested)
+  - [5,6] Renamed BufferSize,MaxDataPoints parameters as MaxItems for consistency
+  - [11]  Added timestamp and channel info to outgoing messages printout when Debug=1
+  - [4.2] Added description fields for listed market, SIC and NAICS in fundamental data
+  - [3.2] Added new MsgParsingLevel parameter for improved callback run-time performance
+  - [7.3] Added newline between separate paragraphs in reported news-story text for readability
+  - Multiple User Guide clarifications and additions
+  - Bug fixes
+
+1.03 (2018-03-19)
+  - [3.2] Enabled Symbol and Symbols as synonymous parameter names
+  - [4.1] Improved quotes request logic & the returned data fields (streaming & blocking)
+  - [6.1] Enabled requesting streaming ticks/quotes for multiple symbols at once
+
+1.02 (2018-03-12):
+  - [7.2] Unified field names in returned news story/headline data
+  - [7.3] Added relevant symbols list in returned news story data
+  - [7.4] News count queries now use DataType of 'number', not 'story'
+
+1.01 (2018-03-11):
+  - [10] Enabled message-specific user callbacks
+  - [10] Added additional information to user callback's eventData
+
+1.00 (2018-02-26):
+  - First commercial release
