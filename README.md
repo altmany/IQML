@@ -60,7 +60,7 @@ IQML is a Matlab connector to IQFeed, so it naturally needs the user to have bot
  * Matlab: IQML works on all Matlab releases since 2008, including the latest release (R2018b).
  
 ### Usage examples
-####1) Get market data (snapshot) for a security
+#### 1) Get market data (snapshot) for a security
 ```Matlab
 >> data = IQML('quotes', 'symbol','GOOG')
 data = 
@@ -88,7 +88,7 @@ data =
 ```
 Available parameters that affect the query: Symbols, Timeout, NumOfEvents, MsgParsingLevel, Fields, UseParallel.
 
-####2) Get fundamental data for a security
+#### 2) Get fundamental data for a security
 ```Matlab
 >> data = IQML('fundamental', 'symbol','IBM')
 data = 
@@ -149,7 +149,7 @@ data =
 ```
 Available parameters that affect the query: Symbols, Timeout, MsgParsingLevel.
 
-####3) Get the latest interval bars for a security
+#### 3) Get the latest interval bars for a security
 ```Matlab
 >> data = IQML('intervalbars', 'Symbol','@VX#', 'NumOfEvents',4)
 data =
@@ -180,7 +180,7 @@ ans =
 ```
 Available parameters that affect the query: Symbols, Timeout, NumOfEvents, MaxItems, MaxDays, IntervalType, IntervalSize, BeginFilterTime, EndFilterTime, BeginDateTime, MsgParsingLevel.
 
-####4) Calculate option Greeks, fair value and implied volatility
+#### 4) Calculate option Greeks, fair value and implied volatility
 ```Matlab
 >> data = IQML('greeks','symbol','IBM1814L116')
 data = 
@@ -220,7 +220,7 @@ data =
 ```
 Available parameters that affect the query: Symbols, Timeout, UseParallel, UnderlyingSymbol, HistoricVolatility, RiskFreeRate, DividendsYield, Side, DaysToExpiration, DaysPerYear.
 
-####5) Get historic/intra-day data
+#### 5) Get historic/intra-day data
 ```Matlab
 % Get historic daily data:
 >> data = IQML('history', 'symbol','IBM', 'dataType','day')  % dataType is optional (default: 'day')
@@ -272,7 +272,7 @@ ans =
 ```
 Available parameters that affect the query: Symbols, DataType (day/week/month/interval/ticks), DataDirection, MaxItems, Days, BeginDate, EndDate, BeginDateTime, EndDateTime, BeginFilterTime, EndFilterTime, IntervalType, IntervalSize, Timeout, UseParallel, MsgParsingLevel.
 
-####6) Get streaming quotes data
+#### 6) Get streaming quotes data
 The initial request to send streaming quotes for the VIX continuous future (@VX#):
 ```Matlab
 IQML('quotes', 'Symbol','@VX#', 'NumOfEvents',100, 'MaxItems',10);
@@ -326,7 +326,7 @@ Available parameters that affect the query: Symbols, DataType (quotes/trades), N
 
 Similarly, streaming interval bars, regional updates and Level-2 market depth updates can be requested using IQML('intervalbars',...), IQML('regional',...) and IQML('marketdepth',...) commands.
 
-####7) Get news data
+#### 7) Get news data
 News configuration:
 ```Matlab
 >> data = IQML('news', 'DataType','config')
@@ -416,7 +416,7 @@ data =
 ```
 Available parameters that affect the query: Symbols, Sources, DataType, Date, BeginDate, EndDate, MaxItems, GetStory, NumOfEvents, Timeout, UseParallel.
 
-####8) Get options/futures chains
+#### 8) Get options/futures chains
 ```Matlab
 % Report GOOG options having strike price between $1000-$1010 in next 4 months
 >> symbols = IQML('chain', 'symbol','goog', 'NearMonths',4, 'MinStrike',1000, 'MaxStrike',1010)'
@@ -488,14 +488,14 @@ data =
 ```
 Available parameters that affect the query: Symbols, DataType (options/futures/spread/foptions), Side, WhatToShow, Months, NearMonths, Years, IncludeBinary, MinStrike, MaxStrike, NumInMoney, NumOutOfMoney, UseParallel.
 
-####9) Connect/disconnect from IQFeed
+#### 9) Connect/disconnect from IQFeed
 ```Matlab
 IQML('disconnect');  % disconnect from IQFeed (IQConnect)
  
 IQML('reconnect');  % disconnect and then automatically re-connect (optional parameters: Username, Password)
 ```
 
-####10) Get connection information/stats
+#### 10) Get connection information/stats
 ```Matlab
 >> data = IQML('stats')
 data =
@@ -538,7 +538,7 @@ data =
            Level1SymbolsWatched: 0
 ```
 
-####11) Specify message event callbacks
+#### 11) Specify message event callbacks
 We can attach a user callback function to all IQFeed messages:
 ```Matlab
 IQML('ProcessFunc',@IQML_Callback);  % set a single callback function for all message types
