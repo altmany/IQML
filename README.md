@@ -19,7 +19,7 @@ IQML provides a reliable, easy-to-use Matlab interface to IQFeed that works righ
 
 IQML was developed by a renowned Matlab expert, Yair Altman. It has been optimized for excellent performance, reliability, stability and compatibility.
 
-IQML includes a very detailed User Guide, complete with working usage examples and implementation tips.
+IQML includes a very detailed [User Guide](https://undocumentedmatlab.com/files/IQML/IQML_User_Guide.pdf), complete with working usage examples and implementation tips.
 
 This downloaded version is fully-functional and can run for 30 days for free. If you wish to use IQML beyond this time, you can purchase a license on [IQML's webpage](https://undocumentedmatlab.com/IQML#Pricing).
   
@@ -60,6 +60,9 @@ IQML is a Matlab connector to IQFeed, so it naturally needs the user to have bot
  * Matlab: IQML works on all Matlab releases since 2008, including the latest release (R2018b).
  
 ### Usage examples
+
+This is a short sampling of IQML’s functionality. The product contains many more features and query types. Review the full [IQML User Guide](https://undocumentedmatlab.com/files/IQML/IQML_User_Guide.pdf) for a detailed description of the available functionality.
+
 #### 1) Get market data (snapshot) for a security
 ```Matlab
 >> data = IQML('quotes', 'symbol','GOOG')
@@ -576,8 +579,6 @@ function IQML_Callback(iqObject, eventData, varargin)
 end  % IQML_Callback
 ```
 
-This was just a short sampling of IQML’s functionality. The product contains many more features and query types. Review the full IQML User Guide for a detailed description of the available functionality.
-
 ### Disclaimer
 THIS SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, LOSS OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-(detailed disclaimer is available in IQML’s User Guide, as well as in the separate DISCLAIMER file)
+(detailed disclaimer is available in [IQML’s User Guide](https://undocumentedmatlab.com/files/IQML/IQML_User_Guide.pdf), as well as in the separate DISCLAIMER file)
