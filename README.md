@@ -3,7 +3,18 @@ IQML
 
 A toolbox for connecting MATLAB to DTN IQFeed, to retrieve financial market data and news.
 
-![](https://undocumentedmatlab.com/images/IQML.png)
+![IQML](https://undocumentedmatlab.com/images/IQML.png)
+
+### Table of contents
+[Overview](#overview)
+[Main functionalities](#main-functionalities)
+[Additional program features](#additional-program-features)
+[Requirements](#requirements)
+[Compatibility](#compatibility)
+[Installation](#installation)
+[Usage examples](#usage-examples)
+[Disclaimer](#disclaimer)
+[Contact us](#contact-us)
 
 ### Overview
 IQML is a Matlab connector to IQFeed, enabling users to leverage Matlab’s superior analysis and visualization capabilities, with IQFeed’s reliable data-feed of live and historic market data for stocks, ETFs, mutual funds, bonds, options, futures, commodities and Forex. IQML can be used for both automated algo-trading and selective manual trading, as well as continuous market data feed.
@@ -73,6 +84,18 @@ Additional usage examples are provided below.
  
 ### Usage examples
 This is a short sampling of IQML’s functionality. The product contains many more features and query types. Review the full [IQML User Guide](https://undocumentedmatlab.com/files/IQML/IQML_User_Guide.pdf) for a detailed description of the available functionality.
+
+ 1. [Get market data (snapshot) for a security](#1-get-market-data-snapshot-for-a-security)
+ 2. [Get fundamental data for a security](#2-get-fundamental-data-for-a-security)
+ 3. [Get the latest interval bars for a security](#3-get-the-latest-interval-bars-for-a-security)
+ 4. [Calculate option Greeks, fair value and implied volatility](#4-calculate-option-greeks-fair-value-and-implied-volatility)
+ 5. [Get historic/intra-day data](#5-get-historicintra-day-data)
+ 6. [Get streaming quotes data](#6-get-streaming-quotes-data)
+ 7. [Get news data](#7-get-news-data)
+ 8. [Get options/futures chains](#8-get-optionsfutures-chains)
+ 9. [Connect/disconnect from IQFeed](#9-connectdisconnect-from-iqfeed)
+ 10. [Get connection information/stats](#10-get-connection-informationstats)
+ 11. [Specify message event callbacks](#11-specify-message-event-callbacks)
 
 #### 1) Get market data (snapshot) for a security
 ```Matlab
