@@ -2,6 +2,7 @@ IQML
 ====
 
 A toolbox for connecting MATLAB to DTN IQFeed, to retrieve financial market data and news.
+![](https://undocumentedmatlab.com/images/IQML.png)
 
 ### Overview
 IQML is a Matlab connector to IQFeed, enabling users to leverage Matlab’s superior analysis and visualization capabilities, with IQFeed’s reliable data-feed of live and historic market data for stocks, ETFs, mutual funds, bonds, options, futures, commodities and Forex. IQML can be used for both automated algo-trading and selective manual trading, as well as continuous market data feed.
@@ -590,9 +591,11 @@ end  % IQML_Callback
 
 ### Disclaimer
 THIS SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, LOSS OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-(detailed disclaimer is available in [IQML’s User Guide](https://undocumentedmatlab.com/files/IQML/IQML_User_Guide.pdf), as well as in the separate DISCLAIMER file)
+
+(A detailed disclaimer is available in [IQML’s User Guide](https://undocumentedmatlab.com/files/IQML/IQML_User_Guide.pdf), as well as in the separate [DISCLAIMER](https://github.com/altmany/IQML/blob/master/DISCLAIMER) file)
 
 ### Contact us
 For additional information about IQML, please visit the product's webpage (http://IQML.net or https://undocumentedmatlab.com/IQML).
 
 If you have any question or feedback, please email us (info@IQML.net) and we will be happy to assist.
+![](https://undocumentedmatlab.com/images/choose_any_5_animated.gif)
