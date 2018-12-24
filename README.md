@@ -6,15 +6,15 @@ A toolbox for connecting MATLAB to DTN IQFeed, to retrieve financial market data
 ![IQML](https://undocumentedmatlab.com/images/IQML.png)
 
 ### Table of contents
-[Overview](#overview)
-[Main functionalities](#main-functionalities)
-[Additional program features](#additional-program-features)
-[Requirements](#requirements)
-[Compatibility](#compatibility)
-[Installation](#installation)
-[Usage examples](#usage-examples)
-[Disclaimer](#disclaimer)
-[Contact us](#contact-us)
+ * [Overview](#overview)
+ * [Main functionalities](#main-functionalities)
+ * [Additional program features](#additional-program-features)
+ * [Requirements](#requirements)
+ * [Compatibility](#compatibility)
+ * [Installation](#installation)
+ * [Usage examples](#usage-examples)
+ * [Disclaimer](#disclaimer)
+ * [Contact us](#contact-us)
 
 ### Overview
 IQML is a Matlab connector to IQFeed, enabling users to leverage Matlab’s superior analysis and visualization capabilities, with IQFeed’s reliable data-feed of live and historic market data for stocks, ETFs, mutual funds, bonds, options, futures, commodities and Forex. IQML can be used for both automated algo-trading and selective manual trading, as well as continuous market data feed.
