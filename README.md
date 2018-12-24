@@ -17,35 +17,26 @@ A toolbox for connecting MATLAB to DTN IQFeed, to retrieve financial market data
  * [Contact us](#contact-us)
 
 ### Overview
-IQML is a Matlab connector to IQFeed, enabling users to leverage Matlab’s superior analysis and visualization capabilities, with IQFeed’s reliable data-feed of live and historic market data for stocks, ETFs, mutual funds, bonds, options, futures, commodities and Forex. IQML can be used for both automated algo-trading and selective manual trading, as well as continuous market data feed.
-
-IQML provides a reliable, easy-to-use Matlab interface to IQFeed that works right out of the box. Simple Matlab commands access IQFeed’s data, in either blocking or non-blocking (streaming) mode:
- * query current market data (quotes and trades) in snapshot (blocking) or streaming modes.
- * request live top-of-book and Level2 market-depth data (snapshot or streaming).
- * fetch historical and intraday market data (individual ticks or interval bars).
- * retrieve fundamental info on assets.
- * lookup options and futures chains (with market data, Greeks).
- * receive news headlines, story-counts and complete news stories, with user-specified filters.
- * attach user-defined Matlab callback functions to IQFeed messages.
- * define custom alerts on streaming market events (news/quotes/interval-bar/regional triggers).
- * combine all of the above for a full-fledged end-to-end automated trading system using plain Matlab.
-
-IQML was developed by a renowned Matlab expert, Yair Altman. It has been optimized for excellent performance, reliability, stability and compatibility.
+IQML is a Matlab connector to IQFeed, enabling users to leverage Matlab’s superior analysis and visualization capabilities, with IQFeed’s reliable data-feed of live and historic market data for stocks, ETFs, mutual funds, bonds, options, futures, commodities and Forex. IQML can be used for both automated algo-trading and selective manual trading, as well as continuous market data feed. IQML provides a reliable, easy-to-use Matlab interface to IQFeed that works right out of the box, and was optimized for excellent performance, reliability, stability and compatibility. 
 
 IQML includes a very detailed [User Guide](https://undocumentedmatlab.com/files/IQML/IQML_User_Guide.pdf), complete with working usage examples and implementation tips.
 
 This downloaded version is fully-functional and can run for 30 days for free. If you wish to use IQML beyond this time, you can purchase a license on [IQML's webpage](https://undocumentedmatlab.com/IQML#Pricing).
-  
-### Main functionalities
- 1. Latest top-of-book and Level2 market-depth data (snapshot or streaming)
- 2. Historic, intra-day and live market data (individual ticks or interval bars)
- 3. Fundamental data on assets
- 4. Options and futures chains lookup (with market data, Greeks)
- 5. News events: headlines, story-counts, full-text stories, and settable filters
- 5. Symbols and market codes lookup
- 6. Connection stats and programmatic connect/disconnect
- 7. Ability to attach user’s Matlab callback functions to IQFeed messages
 
+### Main functionalities
+Simple Matlab commands fetch market data from IQFeed, in either blocking (snapshot) or non-blocking (streaming) modes:
+ * Live top-of-book market data (quotes and trades)
+ * Live Level2 market-depth data
+ * Historic, intra-day and live market data (individual ticks or interval bars)
+ * Fundamental info on assets
+ * Options and futures chains lookup (with market data, Greeks)
+ * Symbols and market codes lookup
+ * News headlines, story-counts and complete news stories, with user-specified filters
+ * Connection stats and programmatic connect/disconnect
+ * Ability to attach user-defined Matlab callback functions to IQFeed messages and market events
+ * User-defined custom alerts on streaming market events (news/quotes/interval-bar/regional triggers)
+ * Combine all of the above for a full-fledged end-to-end automated trading system using plain Matlab
+ 
 ### Additional program features
  * **Full solution** – IQML provides easy-to-use access to IQFeed’s entire data-set within Matlab. Only the core Matlab and IQFeed’s client app are required – no additional toolbox or component is required.
  * **Stability** – IQML has been extensively tested. It is rock solid.
