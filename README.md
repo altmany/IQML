@@ -58,9 +58,18 @@ IQML is a Matlab connector to IQFeed, so it naturally needs the user to have bot
  * Platforms: IQML works on all platforms on which IQFeed runs: Windows, Mac OS, Linux.
  * IQFeed: IQML works with all recent IQFeed installations, including the latest IQFeed API (5.0-5.2, 6.0).
  * Matlab: IQML works on all Matlab releases since 2008, including the latest release (R2018b).
+
+### Installation
+ 1. Download or clone IQML into a local folder on your computer (preferably a separate IQML folder)
+ 2. Add the local folder to your Matlab path using the path tool (in the Matlab Desktop’s toolstrip, click HOME / ENVIRONMENT / Set path… and save). The folder needs to be in your Matlab path whenever you run IQML.
+ 3. Ensure that your local IQFeed client is working and can be used to log-in to IQFeed. This client would be _IQConnect.exe_ on Windows, _IQFeed application_ on MacOS, or ran as a Windows app on Mac/Linux using Parallels/Wine.
+ 4. You can now run IQML within Matlab. To verify that IQML is properly installed, retrieve the latest IQFeed server time, as follows (see section 9.2 in the User Guide):
+```Matlab
+>> t = IQML('time');
+```
+Additional usage examples are provided below.
  
 ### Usage examples
-
 This is a short sampling of IQML’s functionality. The product contains many more features and query types. Review the full [IQML User Guide](https://undocumentedmatlab.com/files/IQML/IQML_User_Guide.pdf) for a detailed description of the available functionality.
 
 #### 1) Get market data (snapshot) for a security
@@ -582,3 +591,8 @@ end  % IQML_Callback
 ### Disclaimer
 THIS SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, LOSS OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 (detailed disclaimer is available in [IQML’s User Guide](https://undocumentedmatlab.com/files/IQML/IQML_User_Guide.pdf), as well as in the separate DISCLAIMER file)
+
+### Contact us
+For additional information about IQML, please visit the product's webpage (http://IQML.net or https://undocumentedmatlab.com/IQML).
+
+If you have any question or feedback, please email us (info@IQML.net) and we will be happy to assist.
