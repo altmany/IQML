@@ -2,6 +2,7 @@ IQML
 ====
 
 A toolbox for connecting MATLAB to DTN IQFeed, to retrieve financial market data and news.
+
 ![](https://undocumentedmatlab.com/images/IQML.png)
 
 ### Overview
@@ -597,5 +598,6 @@ THIS SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESSED O
 ### Contact us
 For additional information about IQML, please visit the product's webpage (http://IQML.net or https://undocumentedmatlab.com/IQML).
 
-If you have any question or feedback, please email us (info@IQML.net) and we will be happy to assist.
+If you have any question or feedback, or need professional assistance in integrating IQML into your trading system, please email us (info@IQML.net) and we will be happy to help.
+
 ![](https://undocumentedmatlab.com/images/choose_any_5_animated.gif)
