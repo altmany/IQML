@@ -1,3 +1,12 @@
+2.13 (2019-02-28)
+  - [6.*] Added the ClearBuffer parameter for streaming data
+  - [6.*] Fixed problem with streaming data when NumOfEvents=inf
+
+2.12 (2019-01-16)
+  - [2.2] Added cross-check for IB-Matlab connector
+  - [2.4] Added 'revert' action to revert back to a previous IQML version
+  - [3.1] Fixed: display User Guide using IQML('doc') even when it is not on Matlab path
+
 2.11 (2018-11-28)
   - [4.5] Added Greek fields Omega, Lambda, CRho, Color, Annual_Factor_Used
           Fixed Greek fields Vega, Rho, Veta, Ultima (compatibility with Financial Toolbox & NAG)
