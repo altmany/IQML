@@ -5,7 +5,7 @@ function [data, errMsg] = IQML(action, parameters, varargin)
 %
 % Inputs:
 %
-%   action (String) - one of: license,version,version,license,update,doc,quotes,intervalbars,fundamental,greeks,news,history,lookup,alert,chain,disconnect,reconnect,time,stats,command
+%   action (String) - one of: license,version,version,license,update,revert,doc,quotes,intervalbars,fundamental,greeks,news,history,lookup,alert,chain,disconnect,reconnect,time,stats,command
 %
 %   parameters - Matlab struct or XLS filename or parameter name/value pairs with the following optional parameters:
 %
