@@ -1,3 +1,11 @@
+2.14 (2019-03-14)
+  - [3.1] Added ability to specify parameters as Matlab class properties (like structs)
+  - [3.1] Fixed problem with specifying parameters using a Matlab table
+  - [3.1] Invalid parameter names are now ignored with a warning, not raise an error
+  - [3.1] Clarified some error messages text
+  - [4.1] Improved handling of multi-symbol queries
+  - [*.*] Symbols, Fields, and news Sources can now be separated by ':' or ','
+
 2.13 (2019-02-28)
   - [6.*] Added the ClearBuffer parameter for streaming data
   - [6.*] Fixed problem with streaming data when NumOfEvents=inf
