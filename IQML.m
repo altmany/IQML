@@ -13,7 +13,7 @@ function [data, errMsg] = IQML(action, parameters, varargin)
 %        Username        (String)  the login ID for connecting to IQFeed via the client
 %        Password        (String)  the password for connecting to IQFeed via the client
 %
-%     Message processing:
+%     Message processing (also see Logging section below):
 %        Timeout         (Number)  default=5; max # of seconds to wait for a response to a blocking query (0=infinite)
 %        Debug           (Logical) default=0 or false; if true or 1, extra data will be displayed in Matlab console
 %        AddPortStats    (Logical) default=0 or false; if true or 1, extra port stats are streamed and returned when Action=stats
@@ -116,6 +116,12 @@ function [data, errMsg] = IQML(action, parameters, varargin)
 %     Custom IQFeed command:
 %        String          (String)  default=''; command to be sent to IQFeed
 %        PortName        (String)  default='Level1'; one of 'Level1','Level2','Admin'
+%
+%     Logging:
+%        Path            (String)  default=''; Path of folder containing the log file
+%        Details         (Numeric) default=[1,0,0,0,0]; array of flags describing which msg groups to log (Admin,L1,L2,Lookup,Debug)
+%        CopyTo          (String)  default=''; Path of folder or filename to which the live log file is copied
+%        DoThis          (String)  default=''; one of 'show', 'display', 'clear' or 'reset'
 %
 % Refer to the User Guide for detailed documentation and usage examples.
 %

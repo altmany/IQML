@@ -1,3 +1,8 @@
+2.15 (2019-03-24)
+  - [9.1]  Fixed a problem with license validation on certain Matlab installations
+  - [12.1] Added display of a few types of IQFeed system messages (excluding stats) in Debug mode
+  - [12.2] Added programmatic control of IQFeed logging
+
 2.14 (2019-03-14)
   - [3.1] Added ability to specify parameters as Matlab class properties (like structs)
   - [3.1] Fixed problem with specifying parameters using a Matlab table
