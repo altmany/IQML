@@ -1,3 +1,11 @@
+2.17 (2019-05-07)
+  - [*.*] Display explanatory message upon an IQFeed account authorization error
+  - [*.*] Clarified warning message in case of partial results returned due to timeout
+  - [4.4] Added Level 2 support for equities (in addition to futures), other improvements (Pro license)
+  - [5.*] Fixed parallelization when only one of BeginDateTime/EndDateTime is specified but not the other
+  - [9.1] Improved behavior for users with multiple IQFeed accounts using Username/Password params
+          Improved startup speed in case of multiple connects/disconnects during the day
+
 2.16 (2019-04-17)
   - [5.2] Enabled specifying BeginDate for historical weekly/monthly data requests
 
