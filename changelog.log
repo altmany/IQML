@@ -1,3 +1,7 @@
+2.18 (2019-05-14)
+  - [9.1] Added alert when a non-IQFeed process is using one of IQFeed's ports
+  - [9.5] Added the new Registry action and related functionality
+
 2.17 (2019-05-07)
   - [*.*] Display explanatory message upon an IQFeed account authorization error
   - [*.*] Clarified warning message in case of partial results returned due to timeout
