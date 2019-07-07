@@ -5,7 +5,7 @@ function [data, errMsg] = IQML(action, parameters, varargin)
 %
 % Inputs:
 %
-%   action (String) - one of: license,version,version,license,update,revert,doc,quotes,intervalbars,fundamental,greeks,news,history,lookup,alert,chain,disconnect,reconnect,time,stats,command
+%   action (String) - one of: license,version,update,revert,doc,quotes,intervalbars,fundamental,greeks,news,history,summary,lookup,alert,chain,disconnect,reconnect,time,stats,command,log,marketdepth,regional
 %
 %   parameters - Matlab struct or XLS filename or parameter name/value pairs with the following optional parameters:
 %
@@ -54,6 +54,12 @@ function [data, errMsg] = IQML(action, parameters, varargin)
 %        EndDateTime     (Integer or String) default=''; latest   bar date (only relevant if DataType=interval or ticks)
 %        BeginFilterTime (String)  default='00:00:00'; earliest bar time (only relevant if DataType=interval or ticks)
 %        EndFilterTime   (String)  default='23:59:59'; latest   bar time (only relevant if DataType=interval or ticks)
+%
+%     Summary:
+%        DataType        (String)  default='snapshot'; one of 'snapshot','fundamental'
+%        SecType         (String)  default='equity'; one of 'equity','bond','mutual fund',...
+%        Exchange        (String)  default='NYSE'; one of 'NYSE','NASDAQ','CBOT',...
+%        Date            (Integer or String)  default=yesterday; end-of-day data for this date (only!) will be fetched
 %
 %     Greeks:
 %        Symbol             (String) default='';  e.g., 'IBM1814L116'

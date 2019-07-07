@@ -1,0 +1,242 @@
+{
+"IQML":
+{
+  "inputs":
+  [
+    {"name":"action",     "kind":"required", "type":["char","string", "choices={'license','version','update','revert','doc','quotes',intervalbars','fundamental','greeks','news','history','summary','lookup','alert','chain','disconnect','reconnect','time','stats','command'}"], "purpose":"Processing action"},
+    {"name":"parameters", "kind":"required", "type":["struct","table","class"], "purpose":"Action parameters (struct, table, or MCOS object)"}
+  ],
+  "outputs":
+  [
+    {"name":"results",  "type":["char","struct","numeric"]},
+    {"name":"errorMsg", "type":"char"}
+  ]
+},
+"IQML":
+{
+  "inputs":
+  [
+    {"name":"action", "kind":"required",  "type":["char","string", "choices={'license','version','quotes','intervalbars','fundamental','greeks','news','history','lookup','alert','chain','disconnect','reconnect','time','stats','command'}"], "purpose":"Processing action"},
+    {"name":"Debug",  "kind":"namevalue", "type":["logical","scalar"], "purpose":"Display debug information? (default=false)"}
+  ]
+},
+"IQML":
+{
+  "inputs":
+  [
+    {"name":"action",          "kind":"required",  "type":["char","string", "choices={'quotes','IntervalBars','fundamental','greeks','news','history','summary','MarketDepth','regional','lookup','alert','chain','reconnect','time','stats','command'}"], "purpose":"Processing action"},
+    {"name":"Username",        "kind":"namevalue", "type":"char",    "purpose":"IQFeed account username"},
+    {"name":"Password",        "kind":"namevalue", "type":"char",    "purpose":"IQFeed account password"},
+    {"name":"Timeout",         "kind":"namevalue", "type":"numeric", "purpose":"max # of seconds to wait for blocking query (0=infinite; default=5)"},
+    {"name":"MsgParsingLevel", "kind":"namevalue", "type":["numeric","integer", "choices={0,1,2}"], "purpose":"parsing level of IQFeed msgs (default=2=maximal)"},
+    {"name":"ProcessFunc",     "kind":"namevalue", "type":["struct","function_handle"], "purpose":"callback function of IQFeed msgs"},
+    {"name":"RaiseErrorMsgs",  "kind":"namevalue", "type":["logical","scalar"], "purpose":"Matlab error upon IQFeed error? (default=true)"}
+  ]
+},
+"IQML":
+{
+  "inputs":
+  [
+    {"name":"action",      "kind":"required",  "type":["char","string", "choices={'quotes'}"], "purpose":"Processing action"},
+    {"name":"Symbol",      "kind":"namevalue", "type":["char","cellstr"],    "purpose":"IQFeed symbol(s)"},
+    {"name":"NumOfEvents", "kind":"namevalue", "type":["numeric","integer"], "purpose":"# of quotes to process (default=1)"},
+    {"name":"MaxItems",    "kind":"namevalue", "type":["numeric","integer",">0"], "purpose":"Max # of quotes to store in buffer (default=1)"},
+    {"name":"UseParallel", "kind":"namevalue", "type":["logical","scalar"],  "purpose":"Process multiple symbols in parallel? (default=false)"},
+    {"name":"Fields",      "kind":"namevalue", "type":["char","cellstr"],    "purpose":"Data fields to process"},
+    {"name":"DataType",    "kind":"namevalue", "type":["char","string", "choices={'quotes','trades'}"], "purpose":"Data type to process"},
+    {"name":"ClearBuffer", "kind":"namevalue", "type":["logical","scalar"],  "purpose":"Clear accumulated streaming? (default=false)"}
+  ]
+},
+"IQML":
+{
+  "inputs":
+  [
+    {"name":"action", "kind":"required",  "type":["char","string", "choices={'fundamental'}"], "purpose":"Processing action"},
+    {"name":"Symbol", "kind":"namevalue", "type":["char","cellstr"], "purpose":"IQFeed symbol(s)"}
+  ]
+},
+"IQML":
+{
+  "inputs":
+  [
+    {"name":"action",             "kind":"required",  "type":["char","string", "choices={'greeks'}"], "purpose":"Processing action"},
+    {"name":"Symbol",             "kind":"namevalue", "type":["char","cellstr"],   "purpose":"IQFeed symbol(s)"},
+    {"name":"UseParallel",        "kind":"namevalue", "type":["logical","scalar"], "purpose":"Process multiple symbols in parallel? (default=false)"},
+    {"name":"UnderlyingSymbol",   "kind":"namevalue", "type":["char"],    "purpose":"Symbol of the underlying asset (optional)"},
+    {"name":"HistoricVolatility", "kind":"namevalue", "type":["numeric"], "purpose":"Underlying price volatility in percent (optional)"},
+    {"name":"RiskFreeRate",       "kind":"namevalue", "type":["numeric"], "purpose":"Domestic RF rate in percent (default=0)"},
+    {"name":"DividendsYield",     "kind":"namevalue", "type":["numeric"], "purpose":"Underlying stock div yield or carry rate in percent (default=0)"},
+    {"name":"Side",               "kind":"namevalue", "type":["char","string", "choices={'Call','Put'}"], "purpose":"Contract side (optional)"},
+    {"name":"DaysToExpiration",   "kind":"namevalue", "type":["numeric"], "purpose":"# days until contract expires (optional)"},
+    {"name":"AnnualFactor",       "kind":"namevalue", "type":["numeric"], "purpose":"# of days per year (default=365)"}
+  ]
+},
+"IQML":
+{
+  "inputs":
+  [
+    {"name":"action",      "kind":"required",  "type":["char","string", "choices={'regional'}"], "purpose":"Processing action"},
+    {"name":"Symbol",      "kind":"namevalue", "type":["char","cellstr"],    "purpose":"IQFeed symbol(s)"},
+    {"name":"NumOfEvents", "kind":"namevalue", "type":["numeric","integer"], "purpose":"# of quotes to process (default=1)"},
+    {"name":"MaxItems",    "kind":"namevalue", "type":["numeric","integer",">0"], "purpose":"Max # of quotes to store in buffer (default=1)"},
+    {"name":"ClearBuffer", "kind":"namevalue", "type":["logical","scalar"],  "purpose":"Clear accumulated streaming? (default=false)"}
+  ]
+},
+"IQML":
+{
+  "inputs":
+  [
+    {"name":"action",          "kind":"required",  "type":["char","string", "choices={'history'}"], "purpose":"Processing action"},
+    {"name":"Symbol",          "kind":"namevalue", "type":["char","cellstr"],    "purpose":"IQFeed symbol(s)"},
+    {"name":"UseParallel",     "kind":"namevalue", "type":["logical","scalar"],  "purpose":"Use parallel processing? (default=false)"},
+    {"name":"DataDirection",   "kind":"namevalue", "type":["numeric","integer", "choices={-1,1}"], "purpose":"Order of returned data bars (default=1=oldest first; -1=reverse)"},
+    {"name":"MaxItems",        "kind":"namevalue", "type":["numeric","integer"], "purpose":"Max # of bars to fetch (default=100; -1=all)"},
+    {"name":"DataType",        "kind":"namevalue", "type":["char","string", "choices={'day','week','month','interval','ticks'}"], "purpose":"Type of data bars"},
+    {"name":"Days",            "kind":"namevalue", "type":["numeric","integer"], "purpose":"# of preceding days to fetch (default=1=today only; -1=all)"},
+    {"name":"BeginDate",       "kind":"namevalue", "type":["char","string","datetime","numeric"], "purpose":"Date of earliest bar to fetch"},
+    {"name":"EndDate",         "kind":"namevalue", "type":["char","string","datetime","numeric"], "purpose":"Date of latest bar to fetch"},
+    {"name":"BeginDateTime",   "kind":"namevalue", "type":["char","string","datetime","numeric"], "purpose":"Date/time of earliest bar to fetch"},
+    {"name":"EndDateTime",     "kind":"namevalue", "type":["char","string","datetime","numeric"], "purpose":"Date/time of latest bar to fetch"},
+    {"name":"BeginFilterTime", "kind":"namevalue", "type":["char","string"],     "purpose":"Time of earliest bar to fetch in each day"},
+    {"name":"EndFilterTime",   "kind":"namevalue", "type":["char","string"],     "purpose":"Time of latest bar to fetch in each day"},
+    {"name":"IntervalType",    "kind":"namevalue", "type":["char","string", "choices={'secs','volume','ticks'}"], "purpose":"Type of interval size (default='secs')"},
+    {"name":"IntervalSize",    "kind":"namevalue", "type":["numeric","integer",">0"], "purpose":"Interval size (default=60)"},
+    {"name":"LabelAtBeginning","kind":"namevalue", "type":["logical","scalar"],  "purpose":"Is 11:17:41 data reported in 11:17 bar or 11:18 bar? (default=false meaning 11:18)"}
+ ]
+},
+"IQML":
+{
+  "inputs":
+  [
+    {"name":"action",   "kind":"required",  "type":["char","string", "choices={'summary'}"], "purpose":"Processing action"},
+    {"name":"DataType", "kind":"namevalue", "type":["char","string", "choices={'snapshot','fundamental'}"], "purpose":"Data type to fetch (default=snapshot)"},
+    {"name":"SecType",  "kind":"namevalue", "type":["char","string", "choices={'Equity','Index/Equity Option','Mutual Fund','Money Market Fund', 'Bond','Index','Market Statistic','Future','Future Option','Future Spread','Spot (Cash) Price','Forward','DTN Calculated Statistic','Calculated Strip','Single Stock Future','Foreign Monetary Exchange','Future Market Depth','Precious Metals','...'}"], "purpose":"Security type to fetch (default=Equity)"},
+    {"name":"Exchange", "kind":"namevalue", "type":["char","string", "choices={'NYSE','NASDAQ','CBOT','...'}"], "purpose":"Exchange to fetch (default=NYSE)"},
+    {"name":"Date",     "kind":"namevalue", "type":["char","string","datetime","numeric"], "purpose":"Date of end-of-day data (default=yesterday)"}
+  ]
+},
+"IQML":
+{
+  "inputs":
+  [
+    {"name":"action",          "kind":"required",  "type":["char","string", "choices={'IntervalBars'}"], "purpose":"Processing action"},
+    {"name":"Symbol",          "kind":"namevalue", "type":["char","cellstr"], "purpose":"IQFeed symbol(s)"},
+    {"name":"NumOfEvents",     "kind":"namevalue", "type":["numeric","integer"], "purpose":"# of bars to process (default=MaxItems)"},
+    {"name":"MaxItems",        "kind":"namevalue", "type":["numeric","integer"], "purpose":"Max # of bars to fetch (default=100)"},
+    {"name":"MaxDays",         "kind":"namevalue", "type":["numeric","integer"], "purpose":"Max # of trading days to fetch (default=1)"},
+    {"name":"BeginDateTime",   "kind":"namevalue", "type":["char","string","datetime","numeric"], "purpose":"Date/time of earliest bar to fetch"},
+    {"name":"BeginFilterTime", "kind":"namevalue", "type":["char","string"],     "purpose":"Time of earliest bar to fetch in each day"},
+    {"name":"EndFilterTime",   "kind":"namevalue", "type":["char","string"],     "purpose":"Time of latest bar to fetch in each day"},
+    {"name":"IntervalType",    "kind":"namevalue", "type":["char","string", "choices={'secs','volume','ticks'}"], "purpose":"Type of interval size (default='secs')"},
+    {"name":"IntervalSize",    "kind":"namevalue", "type":["numeric","integer",">0"], "purpose":"Interval size (default=60)"},
+    {"name":"ClearBuffer",     "kind":"namevalue", "type":["logical","scalar"],  "purpose":"Clear accumulated streaming? (default=false)"}
+  ]
+},
+"IQML":
+{
+  "inputs":
+  [
+    {"name":"action",             "kind":"required",  "type":["char","string", "choices={'MarketDepth'}"], "purpose":"Processing action"},
+    {"name":"Symbol",             "kind":"namevalue", "type":["char","cellstr"], "purpose":"IQFeed symbol(s)"},
+    {"name":"NumOfEvents",        "kind":"namevalue", "type":["numeric","integer"], "purpose":"# of quotes to process (default=10)"},
+    {"name":"IncludeEmptyQuotes", "kind":"namevalue", "type":["logical","scalar"], "purpose":"Include empty Level2 quotes? (default=false)"}
+  ]
+},
+"IQML":
+{
+  "inputs":
+  [
+    {"name":"action",      "kind":"required",  "type":["char","string", "choices={'news'}"], "purpose":"Processing action"},
+    {"name":"Symbol",      "kind":"namevalue", "type":["char","cellstr"], "purpose":"IQFeed symbol(s)"},
+    {"name":"UseParallel", "kind":"namevalue", "type":["logical","scalar"], "purpose":"Use parallel processing? (default=false)"},
+    {"name":"DataType",    "kind":"namevalue", "type":["char","string", "choices={'config','headlines','story','number'}"], "purpose":"Type of data items to process"},
+    {"name":"Sources",     "kind":"namevalue", "type":["char","cellstr"], "purpose":"News source(s)"},
+    {"name":"Date",        "kind":"namevalue", "type":["char","string","datetime","numeric"], "purpose":"Date of news publication (default=[]=all dates)"},
+    {"name":"BeginDate",   "kind":"namevalue", "type":["char","string","datetime","numeric"], "purpose":"Date of earliest item to fetch"},
+    {"name":"EndDate",     "kind":"namevalue", "type":["char","string","datetime","numeric"], "purpose":"Date of latest item to fetch"},
+    {"name":"NumOfEvents", "kind":"namevalue", "type":["numeric","integer"], "purpose":"# of items to process (default=Inf)"},
+    {"name":"MaxItems",    "kind":"namevalue", "type":["numeric","integer"], "purpose":"Max # of items to fetch (default=1000)"},
+    {"name":"GetStory",    "kind":"namevalue", "type":["logical","scalar"],  "purpose":"Get full story text (in addition to headline)? (default=false)"},
+    {"name":"ID",          "kind":"namevalue", "type":["numeric","integer"], "purpose":"Numeric ID(s) of news items to fetch"}
+  ]
+},
+"IQML":
+{
+  "inputs":
+  [
+    {"name":"action",      "kind":"required",  "type":["char","string", "choices={'lookup'}"], "purpose":"Processing action"},
+    {"name":"DataType",    "kind":"namevalue", "type":["char","string", "choices={'symbols','markets','sectypes','SIC','NAICS'}"], "purpose":"Type of data items to lookup"},
+    {"name":"Name",        "kind":"namevalue", "type":["char","string"], "purpose":"Limits query to symbols containing this string"},
+    {"name":"Description", "kind":"namevalue", "type":["char","string"], "purpose":"Limits query to asset names containing this string"},
+    {"name":"Market",      "kind":"namevalue", "type":["char","string","cellstr","numeric"], "purpose":"Limits query to symbols traded in the specified market code/name"},
+    {"name":"SecType",     "kind":"namevalue", "type":["char","string","cellstr","numeric"], "purpose":"Limits query to symbols having the specified sec-type code/name"},
+    {"name":"SIC",         "kind":"namevalue", "type":["char","string","cellstr","numeric"], "purpose":"Limits query to symbols traded in the specified SIC sector/industry code"},
+    {"name":"NAICS",       "kind":"namevalue", "type":["char","string","cellstr","numeric"], "purpose":"Limits query to symbols traded in the specified NAICS sector/industry code"}
+  ]
+},
+"IQML":
+{
+  "inputs":
+  [
+    {"name":"action",        "kind":"required",  "type":["char","string", "choices={'chain'}"], "purpose":"Processing action"},
+    {"name":"Symbol",        "kind":"namevalue", "type":["char","cellstr"], "purpose":"IQFeed symbol(s)"},
+    {"name":"DataType",      "kind":"namevalue", "type":["char","string", "choices={'options','future','spread','foptions'}"], "purpose":"Type of data items to process (default='options')"},
+    {"name":"Side",          "kind":"namevalue", "type":["char","string", "choices={'cp','c','p'}"], "purpose":"Contract side (default='cp'=calls+puts)"},
+    {"name":"WhatToShow",    "kind":"namevalue", "type":["char","string", "choices={'symbols','quotes','fundamental'}"], "purpose":"Data to be displayed (default='symbols')"},
+    {"name":"Months",        "kind":"namevalue", "type":["char","string","cellstr","numeric"], "purpose":"Limits query to the specified months (default=[]=all)"},
+    {"name":"NearMonths",    "kind":"namevalue", "type":[["integer",">=0"]], "purpose":"Number of nearby contract months to report (default=[]=all)"},
+    {"name":"Years",         "kind":"namevalue", "type":[["integer",">=0"]], "purpose":"One or more years to report (default=current year)"},
+    {"name":"IncludeBinary", "kind":"namevalue", "type":["logical","scalar"], "purpose":"Include binary options? (default=true)"},
+    {"name":"MinStrike",     "kind":"namevalue", "type":["numeric"], "purpose":"Only report options with higher strike price (default=[])"},
+    {"name":"MaxStrike",     "kind":"namevalue", "type":["numeric"], "purpose":"Only report options with lower strike price (default=[])"},
+    {"name":"NumInMoney",    "kind":"namevalue", "type":["numeric"], "purpose":"Only report this # of options in the money (default=[])"},
+    {"name":"NumOutOfMoney", "kind":"namevalue", "type":["numeric"], "purpose":"Only report this # of options out of money (default=[])"},
+    {"name":"UseParallel",   "kind":"namevalue", "type":["logical","scalar"], "purpose":"Process data in parallel? (default=false)"}
+  ]
+},
+"IQML":
+{
+  "inputs":
+  [
+    {"name":"action",       "kind":"required",  "type":["char","string", "choices={'stats'}"], "purpose":"Processing action"},
+    {"name":"AddPortStats", "kind":"namevalue", "type":["logical","scalar"], "purpose":"Display port statistics? (default=false)"}
+  ]
+},
+"IQML":
+{
+  "inputs":
+  [
+    {"name":"action",  "kind":"required",  "type":["char","string", "choices={'log'}"], "purpose":"Processing action"},
+    {"name":"Details", "kind":"namevalue", "type":[["logical","vector"],["numeric","vector"]], "purpose":"[Admin,Level1,Level2,Lookup,Debug] flags (default=[1,0,0,0,0])"},
+    {"name":"Path",    "kind":"namevalue", "type":["folder"], "purpose":"Log file's folder"},
+    {"name":"CopyTo",  "kind":"namevalue", "type":["folder","file"], "purpose":"Copy a log snapshot to this folder/file"},
+    {"name":"DoThis",  "kind":"namevalue", "type":["char","string", "choices={'display','reset'}"], "purpose":"Special log action request"}
+  ]
+},
+"IQML":
+{
+  "inputs":
+  [
+    {"name":"action", "kind":"required",  "type":["char","string", "choices={'command'}"], "purpose":"Processing action"},
+    {"name":"String", "kind":"namevalue", "type":["char","string"], "purpose":"IQFeed command string"}
+  ]
+},
+"IQML":
+{
+  "inputs":
+  [
+    {"name":"action",       "kind":"required",  "type":["char","string", "choices={'alert'}"], "purpose":"Processing action"},
+    {"name":"Symbol",       "kind":"namevalue", "type":["char","cellstr"], "purpose":"IQFeed symbol(s)"},
+    {"name":"Trigger",      "kind":"namevalue", "type":["char","string"],  "purpose":"Alert trigger string"},
+    {"name":"AlertAction",  "kind":"namevalue", "type":["char","string","function_handle","cell"], "purpose":"Alert action"},
+    {"name":"NumOfEvents",  "kind":"namevalue", "type":["numeric","integer"], "purpose":"# alerts to process (default=1)"},
+    {"name":"StartStream",  "kind":"namevalue", "type":["logical","scalar"],  "purpose":"Auto-start data streaming? (default=false)"},
+    {"name":"AlertID",      "kind":"namevalue", "type":["numeric","integer"], "purpose":"Numeric ID(s) of alerts to modify/delete"},
+    {"name":"GetStory",     "kind":"namevalue", "type":["logical","scalar"],  "purpose":"Report full news story text in news alert? (default=true)"},
+    {"name":"EmailRecipients", "kind":"namevalue", "type":["char","cellstr"], "purpose":"Recipient email addresses of email alerts"},
+    {"name":"SmtpEmail",    "kind":"namevalue", "type":["char","string"], "purpose":"Email address sending email alerts"},
+    {"name":"SmtpServer",   "kind":"namevalue", "type":["char","string"], "purpose":"Email server sending email alerts"},
+    {"name":"SmtpPassword", "kind":"namevalue", "type":["char","string"], "purpose":"Password of mailbox sending email alerts"}
+  ]
+}
+}

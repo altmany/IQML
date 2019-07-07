@@ -1,3 +1,17 @@
+2.19 (2019-07-07)
+  - [*.*] Fixed compatibility problem with old Matlab releases (R2008a-R2012b)
+  - [*.*] Added functionSignatures.json file for easier IQML usage in Matlab's Live Editor
+  - [*.*] Added online User Guide (https://undocumentedmatlab.com/files/IQML/IQML_User_Guide)
+  - [4.*] Improved performance of single-symbol queries
+  - [4.*] Improved query responsivity in case of IQFeed error
+  - [4.1] Added support for IQFeed client 6.1: new quotes data fields
+  - [4.2] Added support for IQFeed client 6.1: new fundamental data fields
+  - [5.*] Added support for IQFeed client 6.1: new historic data fields, partial latest bar
+  - [5.4] Added the LabelAtBeginning parameter for historic interval data queries (IQFeed 6.0 or newer)
+  - [5.6] Added 'summary' action to fetch historic end-of-day market data summary (Pro license, IQFeed 6.1 or newer)
+  - [8.2] Default value for IncludeBinary parameter in chain query is now false (previously: true)
+  - [9.1] Added the Protocol parameter to connect to IQFeed via legacy API protocols
+
 2.18 (2019-05-14)
   - [9.1] Added alert when a non-IQFeed process is using one of IQFeed's ports
   - [9.5] Added the new Registry action and related functionality
