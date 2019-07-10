@@ -59,6 +59,8 @@ function [data, errMsg] = IQML(action, parameters, varargin)
 %        DataType        (String)  default='snapshot'; one of 'snapshot','fundamental'
 %        SecType         (String)  default='equity'; one of 'equity','bond','mutual fund',...
 %        Exchange        (String)  default='NYSE'; one of 'NYSE','NASDAQ','CBOT',...
+%        ReportEmptyFields (Logical) default=0 or false; if true or 1, empty fields will be reported
+%        Filter          (String or cell-array) list of criteria to filter the returned data
 %        Date            (Integer or String)  default=yesterday; end-of-day data for this date (only!) will be fetched
 %
 %     Greeks:

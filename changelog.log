@@ -1,3 +1,8 @@
+2.20 (2019-07-10)
+  - [5.6] Added ReportEmptyFields parameter to control summary query results
+  - [5.6] Added scanner functionality (summary query with Filter parameter; Pro license)
+  - [9.1] Improved IQConnect startup on Linux/Mac via wine
+
 2.19 (2019-07-07)
   - [*.*] Fixed compatibility problem with old Matlab releases (R2008a-R2012b)
   - [*.*] Added functionSignatures.json file for easier IQML usage in Matlab's Live Editor

@@ -112,6 +112,8 @@
     {"name":"DataType", "kind":"namevalue", "type":["char","string", "choices={'snapshot','fundamental'}"], "purpose":"Data type to fetch (default=snapshot)"},
     {"name":"SecType",  "kind":"namevalue", "type":["char","string", "choices={'Equity','Index/Equity Option','Mutual Fund','Money Market Fund', 'Bond','Index','Market Statistic','Future','Future Option','Future Spread','Spot (Cash) Price','Forward','DTN Calculated Statistic','Calculated Strip','Single Stock Future','Foreign Monetary Exchange','Future Market Depth','Precious Metals','...'}"], "purpose":"Security type to fetch (default=Equity)"},
     {"name":"Exchange", "kind":"namevalue", "type":["char","string", "choices={'NYSE','NASDAQ','CBOT','...'}"], "purpose":"Exchange to fetch (default=NYSE)"},
+    {"name":"ReportEmptyFields", "kind":"namevalue", "type":["logical","scalar"], "purpose":"Report empty fields? (default=false)"},
+    {"name":"Filter",   "kind":"namevalue", "type":["char","string", "cellstr"], "purpose":"Filter criteria for reported securities"},
     {"name":"Date",     "kind":"namevalue", "type":["char","string","datetime","numeric"], "purpose":"Date of end-of-day data (default=yesterday)"}
   ]
 },
