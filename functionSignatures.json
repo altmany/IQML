@@ -121,6 +121,16 @@
 {
   "inputs":
   [
+    {"name":"action",   "kind":"required",  "type":["char","string", "choices={'summary'}"], "purpose":"Processing action"},
+    {"name":"DataType", "kind":"namevalue", "type":["char","string", "choices={'top'}"], "purpose":"Data type to fetch (default=snapshot)"},
+    {"name":"Exchange", "kind":"namevalue", "type":["char","string", "choices={'NYSE','NASDAQ','AMEX'}"], "purpose":"Exchange to fetch (default=NYSE)"},
+    {"name":"Filter",   "kind":"namevalue", "type":["char","string", "choices={'active','gainers','losers','% gainers','% losers','52-week high','52-week low','volume up','volume spike','VWAP up','VWAP down','VWAP % up','VWAP % down'}"], "purpose":"Filter criteria for reported securities"}
+  ]
+},
+"IQML":
+{
+  "inputs":
+  [
     {"name":"action",          "kind":"required",  "type":["char","string", "choices={'IntervalBars'}"], "purpose":"Processing action"},
     {"name":"Symbol",          "kind":"namevalue", "type":["char","cellstr"], "purpose":"IQFeed symbol(s)"},
     {"name":"NumOfEvents",     "kind":"namevalue", "type":["numeric","integer"], "purpose":"# of bars to process (default=MaxItems)"},

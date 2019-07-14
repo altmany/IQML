@@ -56,12 +56,12 @@ function [data, errMsg] = IQML(action, parameters, varargin)
 %        EndFilterTime   (String)  default='23:59:59'; latest   bar time (only relevant if DataType=interval or ticks)
 %
 %     Summary:
-%        DataType        (String)  default='snapshot'; one of 'snapshot','fundamental'
+%        DataType        (String)  default='snapshot'; one of 'snapshot','fundamental','top'
 %        SecType         (String)  default='equity'; one of 'equity','bond','mutual fund',...
-%        Exchange        (String)  default='NYSE'; one of 'NYSE','NASDAQ','CBOT',...
+%        Exchange        (String)  default='NYSE'; one of 'NYSE','NASDAQ','AMEX','CBOT',...
 %        ReportEmptyFields (Logical) default=0 or false; if true or 1, empty fields will be reported
 %        Filter          (String or cell-array) list of criteria to filter the returned data
-%        Date            (Integer or String)  default=yesterday; end-of-day data for this date (only!) will be fetched
+%        Date            (Integer or String)  default=now; end-of-day (or latest) data for this date (only!) will be fetched
 %
 %     Greeks:
 %        Symbol             (String) default='';  e.g., 'IBM1814L116'
