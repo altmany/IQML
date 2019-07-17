@@ -1,6 +1,11 @@
+2.22 (2019-07-17)
+  - [*.*] Fixed bug that caused "Duplicate field name" error for some queries/Matlab releases
+  - [4.2] Added Underlying_Contract field for continuous future contracts
+  - [4.6] Fixed bug in change % fields and reordered fields in 'top' scanner queries
+
 2.21 (2019-07-14)
   - [4.6] Enabled fetching current market summary/scanner (Pro license, IQFeed 6.1)
-  - [4.6] Added predefined 'Top' scanners for AMEX/NYSE/NASDAQ (Pro license)
+  - [4.6] Added predefined 'top' scanners for AMEX/NYSE/NASDAQ (Pro license)
   - [5.6] In summary query, Date parameter default value is "now" (previously: yesterday)
 
 2.20 (2019-07-10)
