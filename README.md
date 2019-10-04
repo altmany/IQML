@@ -60,8 +60,8 @@ IQML is a Matlab connector to IQFeed, so it naturally needs the user to have bot
 
 ### Compatibility
  * Platforms: IQML works on all platforms on which IQFeed runs: Windows, Mac OS, Linux.
- * IQFeed: IQML works with all recent IQFeed installations, including the latest IQFeed API (5.0-5.2, 6.0).
- * Matlab: IQML works on all Matlab releases since 2008, including the latest release (R2018b).
+ * IQFeed: IQML works with all recent IQFeed installations, including the latest IQFeed API (6.1).
+ * Matlab: IQML works on all Matlab releases since 2008, including the latest release (R2019b).
 
 ### Installation
  1. Download or clone IQML into a local folder on your computer (preferably a separate IQML folder)
