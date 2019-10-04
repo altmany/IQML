@@ -1,3 +1,8 @@
+2.23 (2019-09-18)
+  - [*.*] Improved collection of parallelized data when some results return an error or empty data
+  - [4.3] Added UseParallel parameter functionality to IntervalBars (Pro license)
+  - [5.*] Fixed the implementation of MaxItems=-1, due to an IQFeed API behavior change
+
 2.22 (2019-07-17)
   - [*.*] Fixed bug that caused "Duplicate field name" error for some queries/Matlab releases
   - [4.2] Added Underlying_Contract field for continuous future contracts
