@@ -1,3 +1,9 @@
+2.24 (2019-10-04)
+  - [*.*] Improved processing speed and streaming data throughput rate
+  - [5.5] Added TradeAggressor,DayOfMonth fields to historic ticks data (IQFeed 6.1)
+  - [8.*] Fixed duplicate lookup entries following an IQML reconnect
+  - [9.4] Enabled sending multiple IQFeed custom commands using a single IQML command
+
 2.23 (2019-09-18)
   - [*.*] Improved collection of parallelized data when some results return an error or empty data
   - [4.3] Added UseParallel parameter functionality to IntervalBars (Pro license)
@@ -6,7 +12,7 @@
 2.22 (2019-07-17)
   - [*.*] Fixed bug that caused "Duplicate field name" error for some queries/Matlab releases
   - [4.2] Added Underlying_Contract field for continuous future contracts
-  - [4.6] Fixed bug in change % fields and reordered fields in 'top' scanner queries
+  - [4.6] Fixed bug in change% fields and reordered fields in 'top' scanner queries
 
 2.21 (2019-07-14)
   - [4.6] Enabled fetching current market summary/scanner (Pro license, IQFeed 6.1)
