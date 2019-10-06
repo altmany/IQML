@@ -1,4 +1,9 @@
-2.24 (2019-10-04)
+2.25 (2019-10-06)
+  - [*.*] Clarified a few error messages
+  - [5.*] Fixed bug in historic data introduced in previous release (2.24)
+  - [9.1] Improved detection and report of port conflicts with other programs
+
+2.24 (2019-10-05)
   - [*.*] Improved processing speed and streaming data throughput rate
   - [5.5] Added TradeAggressor,DayOfMonth fields to historic ticks data (IQFeed 6.1)
   - [8.*] Fixed duplicate lookup entries following an IQML reconnect
