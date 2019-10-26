@@ -1,3 +1,11 @@
+2.26 (2019-10-26)
+  - [2.1] Improved reporting of some problems with missing program components
+  - [4.*] Fixed bug when multiple symbols are queried together and some symbols have no data
+  - [4.*] Fixed bug of not distinguishing between symbols with '.' and '-' (e.g., AGM.A, AGM-A)
+  - [4.2] Added fundamental data caching, for improved query performance
+  - [4.5] Automatically infer UnderlyingSymbol for future options
+  - [5.*] Small performance speedup of multi-symbol queries
+
 2.25 (2019-10-06)
   - [*.*] Clarified a few error messages
   - [5.*] Fixed bug in historic data introduced in previous release (2.24)
