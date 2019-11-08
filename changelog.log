@@ -1,3 +1,11 @@
+2.27 (2019-11-08)
+  - [2.1] Improved reporting of a missing IQFeed client (IQConnect) installation
+  - [4.1] Added Exchange_Description field if Exchange_Id field is reported by IQFeed
+  - [4.2] Fixed bug in decoding the Exchange_Description field for some exchanges
+  - [4.5] Improved auto-inferral of UnderlyingSymbol for future options
+  - [8.2] Added warning when trying to use Years parameter in index/equity chain query
+  - [9.1] Improved detection and report of port conflicts with other programs
+
 2.26 (2019-10-26)
   - [2.1] Improved reporting of some problems with missing program components
   - [4.*] Fixed bug when multiple symbols are queried together and some symbols have no data
