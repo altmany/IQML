@@ -235,9 +235,9 @@ data =
                               Vega: 0.12404
                              Theta: -0.076697
                                Rho: 6.1318
-							  CRho: 6.7992
-							 Omega: 10.189
-							Lambda: 10.189
+                              CRho: 6.7992
+                             Omega: 10.189
+                            Lambda: 10.189
                              Gamma: 0.027646
                              Vanna: -0.3527
                              Charm: 0.0021809
