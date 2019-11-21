@@ -223,7 +223,7 @@ data =
                Inferred_Asset_Side: 'Call'
                  Underlying_Symbol: 'IBM'
                    Underlying_Spot: 121.3
-			 Underlying_Asset_Name: 'INTERNATIONAL BUSINESS MACHINE'
+             Underlying_Asset_Name: 'INTERNATIONAL BUSINESS MACHINE'
     Underlying_Historic_Volatility: 37.1
             Assumed_Risk_Free_Rate: 0
             Assumed_Dividend_Yield: 0
@@ -247,7 +247,7 @@ data =
                              Zomma: -0.061581
                              Color: -0.00038078
                             Ultima: -45.238
-				Annual_Factor_Used: 365
+                Annual_Factor_Used: 365
            This_Asset_Latest_Quote: [1×1 struct]
            Underlying_Latest_Quote: [1×1 struct]
            This_Asset_Fundamentals: [1×1 struct]
