@@ -1,5 +1,14 @@
+2.29 (2019-11-21)
+  - [2.2] Clarified activation error messages in deployed programs
+  - [2.2] Improved activation resiliency to temporary network hickups
+  - [2.2] Improved activation resiliency to MacOS-induced hostname changes
+  - [2.4] Skip version update check in deployed (compiled) environments
+  - [4.1] Improved processing speed of quotes queries with Fields parameter
+  - [4.2] Added SIC, NAICS sector classification data in fundamental data queries
+  - [9.1] Improved report of port conflicts with other programs in deployed programs
+
 2.28 (2019-11-09)
-  - [2.1] Fixed activation issue with compiled IQML on some deployed computers (requires reactivation)
+  - [2.2] Fixed activation issue with compiled IQML on some deployed computers (requires reactivation)
 
 2.27 (2019-11-08)
   - [2.1] Improved reporting of a missing IQFeed client (IQConnect) installation
