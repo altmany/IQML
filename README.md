@@ -29,6 +29,7 @@ Simple Matlab commands fetch market data from IQFeed, in either blocking (snapsh
  * Live Level2 market-depth data
  * Historic, intra-day and live market data (individual ticks or interval bars)
  * Fundamental info on assets
+ * Market scanner based on fundamental and trading criteria
  * Options and futures chains lookup (with market data, Greeks)
  * Symbols and market codes lookup
  * News headlines, story-counts and complete news stories, with user-specified filters
@@ -174,6 +175,8 @@ data =
        Security_Type_Description: 'Equity'
                  SIC_Description: 'COMPUTER INTEGRATED SYSTEMS DESIGN'
                NAICS_Description: 'Computer Systems Design Services'
+                 SIC_Sector_Name: 'Services'
+               NAICS_Sector_Name: 'Professional, Scientific, Technical services'
 ```
 Available parameters that affect the query: Symbols, Timeout, MsgParsingLevel.
 
@@ -220,6 +223,7 @@ data =
                Inferred_Asset_Side: 'Call'
                  Underlying_Symbol: 'IBM'
                    Underlying_Spot: 121.3
+			 Underlying_Asset_Name: 'INTERNATIONAL BUSINESS MACHINE'
     Underlying_Historic_Volatility: 37.1
             Assumed_Risk_Free_Rate: 0
             Assumed_Dividend_Yield: 0
@@ -230,17 +234,20 @@ data =
                              Delta: 0.68197
                               Vega: 0.12404
                              Theta: -0.076697
-                               Rho: 0.061318
-                             Omega: 10.189
+                               Rho: 6.1318
+							  CRho: 6.7992
+							 Omega: 10.189
+							Lambda: 10.189
                              Gamma: 0.027646
                              Vanna: -0.3527
                              Charm: 0.0021809
                              Vomma: 5.8043
-                              Veta: -0.0024262
+                              Veta: 2.4262
                              Speed: -0.0012419
                              Zomma: -0.061581
                              Color: -0.00038078
-                            Ultima: -0.45238
+                            Ultima: -45.238
+				Annual_Factor_Used: 365
            This_Asset_Latest_Quote: [1×1 struct]
            Underlying_Latest_Quote: [1×1 struct]
            This_Asset_Fundamentals: [1×1 struct]
@@ -291,12 +298,15 @@ ans =
                   Bid: 17.1
                   Ask: 17.15
                TickID: 4377589
-         BasisForLast: 'O'
-     BasisDescription: 'Other trade = any trade not accounted for by C or E'
+         BasisForLast: 'C'
     TradeMarketCenter: 32
-      TradeMarketName: 'CBOE Futures Exchange (CFE)'
       TradeConditions: '4D'
+   TradeAggressorCode: 0
+           DayOfMonth: 9
+     BasisDescription: 'Last qualified trade'
+      TradeMarketName: 'CBOE Futures Exchange (CFE)'
      TradeDescription: 'Implied'
+ AggressorDescription: 'Unknown/unsupported'
 ```
 Available parameters that affect the query: Symbols, DataType (day/week/month/interval/ticks), DataDirection, MaxItems, Days, BeginDate, EndDate, BeginDateTime, EndDateTime, BeginFilterTime, EndFilterTime, IntervalType, IntervalSize, Timeout, UseParallel, MsgParsingLevel.
 
