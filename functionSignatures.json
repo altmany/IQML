@@ -3,7 +3,7 @@
 {
   "inputs":
   [
-    {"name":"action",     "kind":"required", "type":["char","string", "choices={'license','version','update','revert','doc','quotes',intervalbars','fundamental','greeks','news','history','summary','lookup','alert','chain','disconnect','reconnect','time','stats','command'}"], "purpose":"Processing action"},
+    {"name":"action",     "kind":"required", "type":["char","string", "choices={'license','version','update','revert','doc','quotes',intervalbars','fundamental','greeks','news','history','summary','lookup','alert','chain','disconnect','reconnect','time','stats','command','log','marketdepth','regional','registry'}"], "purpose":"Processing action"},
     {"name":"parameters", "kind":"required", "type":["struct","table","class"], "purpose":"Action parameters (struct, table, or MCOS object)"}
   ],
   "outputs":
@@ -27,6 +27,7 @@
     {"name":"action",          "kind":"required",  "type":["char","string", "choices={'quotes','IntervalBars','fundamental','greeks','news','history','summary','MarketDepth','regional','lookup','alert','chain','reconnect','time','stats','command'}"], "purpose":"Processing action"},
     {"name":"Username",        "kind":"namevalue", "type":"char",    "purpose":"IQFeed account username"},
     {"name":"Password",        "kind":"namevalue", "type":"char",    "purpose":"IQFeed account password"},
+    {"name":"Protocol",        "kind":"namevalue", "type":"numeric", "purpose":"the IQFeed API protocol number to be used (default=current IQFeed client version)"},
     {"name":"Timeout",         "kind":"namevalue", "type":"numeric", "purpose":"max # of seconds to wait for blocking query (0=infinite; default=5)"},
     {"name":"MsgParsingLevel", "kind":"namevalue", "type":["numeric","integer", "choices={0,1,2}"], "purpose":"parsing level of IQFeed msgs (default=2=maximal)"},
     {"name":"ProcessFunc",     "kind":"namevalue", "type":["struct","function_handle"], "purpose":"callback function of IQFeed msgs"},
@@ -59,16 +60,17 @@
 {
   "inputs":
   [
-    {"name":"action",             "kind":"required",  "type":["char","string", "choices={'greeks'}"], "purpose":"Processing action"},
-    {"name":"Symbol",             "kind":"namevalue", "type":["char","cellstr"],   "purpose":"IQFeed symbol(s)"},
-    {"name":"UseParallel",        "kind":"namevalue", "type":["logical","scalar"], "purpose":"Process multiple symbols in parallel? (default=false)"},
-    {"name":"UnderlyingSymbol",   "kind":"namevalue", "type":["char"],    "purpose":"Symbol of the underlying asset (optional)"},
-    {"name":"HistoricVolatility", "kind":"namevalue", "type":["numeric"], "purpose":"Underlying price volatility in percent (optional)"},
-    {"name":"RiskFreeRate",       "kind":"namevalue", "type":["numeric"], "purpose":"Domestic RF rate in percent (default=0)"},
-    {"name":"DividendsYield",     "kind":"namevalue", "type":["numeric"], "purpose":"Underlying stock div yield or carry rate in percent (default=0)"},
-    {"name":"Side",               "kind":"namevalue", "type":["char","string", "choices={'Call','Put'}"], "purpose":"Contract side (optional)"},
-    {"name":"DaysToExpiration",   "kind":"namevalue", "type":["numeric"], "purpose":"# days until contract expires (optional)"},
-    {"name":"AnnualFactor",       "kind":"namevalue", "type":["numeric"], "purpose":"# of days per year (default=365)"}
+    {"name":"action",               "kind":"required",  "type":["char","string", "choices={'greeks'}"], "purpose":"Processing action"},
+    {"name":"Symbol",               "kind":"namevalue", "type":["char","cellstr"],   "purpose":"IQFeed symbol(s)"},
+    {"name":"UseParallel",          "kind":"namevalue", "type":["logical","scalar"], "purpose":"Process multiple symbols in parallel? (default=false)"},
+    {"name":"UnderlyingSymbol",     "kind":"namevalue", "type":["char"],    "purpose":"Symbol of the underlying asset (optional)"},
+    {"name":"HistoricVolatility",   "kind":"namevalue", "type":["numeric"], "purpose":"Underlying price volatility in percent (optional)"},
+    {"name":"UseImpliedVolatility", "kind":"namevalue", "type":["logical","scalar"], "purpose":"Use implied (not historic) volatility to calculate Greeks? (default=false)"},
+    {"name":"RiskFreeRate",         "kind":"namevalue", "type":["numeric"], "purpose":"Domestic RF rate in percent (default=0)"},
+    {"name":"DividendsYield",       "kind":"namevalue", "type":["numeric"], "purpose":"Underlying stock div yield or carry rate in percent (default=0)"},
+    {"name":"Side",                 "kind":"namevalue", "type":["char","string", "choices={'Call','Put'}"], "purpose":"Contract side (optional)"},
+    {"name":"DaysToExpiration",     "kind":"namevalue", "type":["numeric"], "purpose":"# days until contract expires (optional)"},
+    {"name":"AnnualFactor",         "kind":"namevalue", "type":["numeric"], "purpose":"# of days per year (default=365)"}
   ]
 },
 "IQML":
@@ -230,8 +232,9 @@
   "inputs":
   [
     {"name":"action", "kind":"required",  "type":["char","string", "choices={'command'}"], "purpose":"Processing action"},
-    {"name":"String", "kind":"namevalue", "type":["char","string"], "purpose":"IQFeed command string"}
-  ]
+    {"name":"String", "kind":"namevalue", "type":["char","string"], "purpose":"IQFeed command string"},
+    {"name":"ProcessFunc",     "kind":"namevalue", "type":["struct","function_handle"], "purpose":"callback function of IQFeed msgs"}
+ ]
 },
 "IQML":
 {
