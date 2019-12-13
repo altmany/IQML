@@ -1,3 +1,6 @@
+2.311 (2019-12-13)
+  - [7.2] Fixed bug in parsing of reported news timestamp field
+
 2.31 (2019-12-12)
   - [*.*] Fixed incompatibility with Matlab releases R2009a or older
   - [4.2] Fixed bug in parsing of reported date fields
