@@ -1,18 +1,23 @@
-2.312 (2019-12-13)
-  - [5.8] Fixed bug in parsing of reported history datestamp field
-  - [7.2] Fixed bug in parsing of reported news timestamp field
+2.32 (2019-12-16)
+  - [2.4] Modified the hyperlinks in the new-version message
+  - [4.1] Fixed bug in accumulating multiple quotes when some quotes data is missing
+  - [5.*] Improved processing speed of historic data queries (esp. daily/weekly)
+
+2.311 (2019-12-13)
+  - [5.*] Fixed bug in parsing of reported history Datestamp field
+  - [7.2] Fixed bug in parsing of reported news Timestamp field
 
 2.31 (2019-12-12)
-  - [*.*] Fixed incompatibility with Matlab releases R2009a or older
+  - [*.*] Fixed incompatibility of Matlab releases R2009a or older
   - [4.2] Fixed bug in parsing of reported date fields
   - [4.5] Added UseImpliedVolatility optional Greeks parameter
 
 2.30 (2019-12-08)
-  - [4.2]  Improved processing speed of fundamental data queries
-  - [4.5]  Improved resiliency of Greeks query to data problems (e.g. missing data)
-  - [5.*]  Improved processing speed of historic data queries
-  - [8.1]  Improved processing speed of symbol lookup queries
-  - [9.3]  Fixed an edge-case problem with some client stats queries
+  - [4.2] Improved processing speed of fundamental data queries
+  - [4.5] Improved resiliency of Greeks query to data problems (e.g. missing data)
+  - [5.*] Improved processing speed of historic data queries
+  - [8.1] Improved processing speed of symbol lookup queries
+  - [9.3] Fixed an edge-case problem with some client stats queries
   - [11.2] Added support for regional update alerts and for the 'contains' operator
 
 2.29 (2019-11-21)
