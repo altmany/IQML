@@ -1,4 +1,4 @@
-function [data, errMsg] = IQML(action, parameters, varargin)
+function [data, errMsg] = IQML(action, parameters, varargin) %#ok
 %IQML - Get historic or real-time market data from DTN IQFeed
 %
 % Syntax:  [data, errMsg] = IQML(action, paramName1,paramValue1, paramName2,paramValue2, ...)

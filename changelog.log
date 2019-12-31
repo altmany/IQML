@@ -1,3 +1,9 @@
+2.33 (2019-12-31)
+  - [4.5] Displayed message when Greeks are requested for expired contracts or with missing data
+  - [4.6] Identified cases of missing summary data from IQFeed
+  - [5.*] Displayed message when trying to use Days with Begin/EndDateTime in interval/ticks queries
+  - [8.2] Clarified message when querying a chain with DataType='options' and non-default Years
+
 2.32 (2019-12-16)
   - [2.4] Modified the hyperlinks in the new-version message
   - [4.1] Fixed bug in accumulating multiple quotes when some quotes data is missing
