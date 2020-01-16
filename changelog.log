@@ -1,3 +1,7 @@
+2.34 (2020-01-16)
+  - [4.3] Fixed bug in parsing am time part in a numeric BeginDateTime parameter
+  - [6.3] Added MaxUpdateDuration parameter for streaming intervalbars request
+
 2.33 (2019-12-31)
   - [4.5] Displayed message when Greeks are requested for expired contracts or with missing data
   - [4.6] Identified cases of missing summary data from IQFeed
