@@ -1,3 +1,6 @@
+2.35 (2020-02-05)
+  - [9.1] Fixed a connection conflict with IQFeed's Excel connector
+
 2.34 (2020-01-16)
   - [4.3] Fixed bug in parsing am time part in a numeric BeginDateTime parameter
   - [6.3] Added MaxUpdateDuration parameter for streaming intervalbars request
@@ -18,7 +21,7 @@
   - [7.2] Fixed bug in parsing of reported news Timestamp field
 
 2.31 (2019-12-12)
-  - [*.*] Fixed incompatibility of Matlab releases R2009a or older
+  - [*.*] Fixed incompatibility with Matlab releases R2009a or older
   - [4.2] Fixed bug in parsing of reported date fields
   - [4.5] Added UseImpliedVolatility optional Greeks parameter
 
