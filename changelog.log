@@ -1,3 +1,8 @@
+2.37 (2020-03-30)
+  - [3.1]  Display a list of all valid parameters when warning about invalid specified parameter(s)
+  - [7.2]  Improved performance of news headline query
+  - [10.1] Improved reporting of errors in user-specified callback function
+
 2.36 (2020-03-06)
   - [7.2] Set the minimal Timeout to 60 secs when GetStory is requested
   - [7.3] Report only unique symbols in a news story query (discard duplicates)
