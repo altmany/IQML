@@ -1,3 +1,8 @@
+2.38 (2020-04-14)
+  - [*.*] Improved UseParallel robustness in some scenarios/edge cases (Pro license)
+  - [2.2] Removed cross-check for IB-Matlab connector in deployed programs
+  - [7.2] Avoided error when IQFeed sends empty news headlines with no text
+
 2.37 (2020-03-30)
   - [3.1]  Display a list of all valid parameters when warning about invalid specified parameter(s)
   - [7.2]  Improved performance of news headline query
