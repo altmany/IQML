@@ -1,3 +1,8 @@
+2.39 (2020-04-16)
+  - [*.*] Added informative message when the user specifies invalid Symbol format
+  - [4.1] Fixed bug when using custom Fields in UseParallel mode for multiple symbols
+  - [9.3] IQConnect's Diagnostics utility now displays IQML version and parallel workers in Client Stats
+
 2.38 (2020-04-14)
   - [*.*] Improved UseParallel robustness in some scenarios/edge cases (Pro license)
   - [2.2] Removed cross-check for IB-Matlab connector in deployed programs
