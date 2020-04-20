@@ -28,19 +28,20 @@ function [data, errMsg] = IQML(action, parameters, varargin) %#ok
 %        Symbols         (String :-delimited or cell-array) default=''; e.g., '@VX#' or 'IBM:GOOG' or {'IBM','GOOG'}
 %        NumOfEvents     (Integer) default=inf; max # of IQFeed messages to process in streaming (non-blocking) data mode
 %        MaxItems        (Integer) default=1; size of the reported buffer accumulating the latest streaming quotes/ticks
-%        Fields          (String or cell-array) list of data fields to be reported by IQFeed (default: 16 fields)
+%        Fields          (String or cell-array) list of data fields to be reported by IQML (default: 16 fields)
 %        ClearBuffer     (Logical) default=0 or false; if true or 1, internal cyclic quotes buffer is cleared when data is returned
 %
 %     Interval bars:
-%        Symbols         (String :-delimited or cell-array) default=''; e.g., '@VX#' or 'IBM:GOOG' or {'IBM','GOOG'}
-%        NumOfEvents     (Integer) default=inf; max # of IQFeed messages to process in streaming (non-blocking) data mode
-%        MaxItems        (Integer) default=100; size of the reported buffer accumulating the latest streaming interval bars
-%        MaxDays         (String)  default=1; max number of days to be retrieved
-%        IntervalType    (String)  default='secs'; one of 'secs','volume','trades'
-%        IntervalSize    (Integer) default=60; size of interval bars in specified or default units (seconds)
-%        BeginFilterTime (String)  default='00:00:00'; earliest bar time
-%        EndFilterTime   (String)  default='23:59:59'; latest   bar time
-%        BeginDateTime   (Integer or String) default=''; earliest bar date
+%        Symbols            (String :-delimited or cell-array) default=''; e.g., '@VX#' or 'IBM:GOOG' or {'IBM','GOOG'}
+%        NumOfEvents        (Integer) default=inf; max # of IQFeed messages to process in streaming (non-blocking) data mode
+%        MaxItems           (Integer) default=100; size of the reported buffer accumulating the latest streaming interval bars
+%        MaxDays            (String)  default=1; max number of days to be retrieved
+%        IntervalType       (String)  default='secs'; one of 'secs','volume','trades'
+%        IntervalSize       (Integer) default=60; size of interval bars in specified or default units (seconds)
+%        BeginFilterTime    (String)  default='00:00:00'; earliest bar time
+%        EndFilterTime      (String)  default='23:59:59'; latest   bar time
+%        BeginDateTime      (Integer or String) default=''; earliest bar date
+%        MaxUpdateDuration  (Integer) default=0; max # of secs to wait after a trade before receiving bar update message
 %
 %     Market depth:
 %        Symbols            (String :-delimited or cell-array) default=''; e.g., '@VX#' or 'IBM:GOOG' or {'IBM','GOOG'}
@@ -81,6 +82,7 @@ function [data, errMsg] = IQML(action, parameters, varargin) %#ok
 %        EndFilterTime   (String)  default='23:59:59'; latest   bar time (only relevant if DataType=interval or ticks)
 %        BeginDateTime   (Integer or String) default=''; earliest bar date (only relevant if DataType=interval or ticks)
 %        EndDateTime     (Integer or String) default=''; latest   bar date (only relevant if DataType=interval or ticks)
+%        Fields          (String or cell-array) list of data fields to be reported by IQML (default: all fields)
 %
 %     News:
 %        DataType        (String)  default='config'; one of 'config','headlines','story'
