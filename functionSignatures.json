@@ -45,7 +45,8 @@
     {"name":"UseParallel", "kind":"namevalue", "type":["logical","scalar"],  "purpose":"Process multiple symbols in parallel? (default=false)"},
     {"name":"Fields",      "kind":"namevalue", "type":["char","string","cellstr"], "purpose":"Data fields to report"},
     {"name":"DataType",    "kind":"namevalue", "type":["char","string", "choices={'quotes','trades'}"], "purpose":"Data type to process"},
-    {"name":"ClearBuffer", "kind":"namevalue", "type":["logical","scalar"],  "purpose":"Clear accumulated streaming? (default=false)"}
+    {"name":"ClearBuffer", "kind":"namevalue", "type":["logical","scalar"],  "purpose":"Clear accumulated streaming? (default=false)"},
+    {"name":"AssignTo",    "kind":"namevalue", "type":["char","string"],     "purpose":"Variable in base workspace, updated live (default='')"}
   ]
 },
 "IQML":
@@ -81,7 +82,8 @@
     {"name":"Symbol",      "kind":"namevalue", "type":["char","string","cellstr"], "purpose":"IQFeed symbol(s)"},
     {"name":"NumOfEvents", "kind":"namevalue", "type":["numeric","integer"],       "purpose":"# of quotes to process (default=1)"},
     {"name":"MaxItems",    "kind":"namevalue", "type":["numeric","integer",">0"],  "purpose":"Max # of quotes to store in buffer (default=1)"},
-    {"name":"ClearBuffer", "kind":"namevalue", "type":["logical","scalar"],        "purpose":"Clear accumulated streaming? (default=false)"}
+    {"name":"ClearBuffer", "kind":"namevalue", "type":["logical","scalar"],        "purpose":"Clear accumulated streaming? (default=false)"},
+    {"name":"AssignTo",    "kind":"namevalue", "type":["char","string"],           "purpose":"Variable in base workspace, updated live (default='')"}
   ]
 },
 "IQML":
@@ -145,7 +147,8 @@
     {"name":"EndFilterTime",     "kind":"namevalue", "type":["char","string"],     "purpose":"Time of latest bar to fetch in each day"},
     {"name":"IntervalType",      "kind":"namevalue", "type":["char","string", "choices={'secs','volume','ticks'}"], "purpose":"Type of interval size (default='secs')"},
     {"name":"IntervalSize",      "kind":"namevalue", "type":["numeric","integer",">0"], "purpose":"Interval size (default=60)"},
-    {"name":"ClearBuffer",       "kind":"namevalue", "type":["logical","scalar"],  "purpose":"Clear accumulated streaming? (default=false)"}
+    {"name":"ClearBuffer",       "kind":"namevalue", "type":["logical","scalar"],  "purpose":"Clear accumulated streaming? (default=false)"},
+    {"name":"AssignTo",          "kind":"namevalue", "type":["char","string"],     "purpose":"Variable in base workspace, updated live (default='')"}
   ]
 },
 "IQML":
@@ -155,7 +158,8 @@
     {"name":"action",             "kind":"required",  "type":["char","string", "choices={'MarketDepth'}"], "purpose":"Processing action"},
     {"name":"Symbol",             "kind":"namevalue", "type":["char","string","cellstr"], "purpose":"IQFeed symbol(s)"},
     {"name":"NumOfEvents",        "kind":"namevalue", "type":["numeric","integer"], "purpose":"# of quotes to process (default=10)"},
-    {"name":"IncludeEmptyQuotes", "kind":"namevalue", "type":["logical","scalar"], "purpose":"Include empty Level2 quotes? (default=false)"}
+    {"name":"IncludeEmptyQuotes", "kind":"namevalue", "type":["logical","scalar"],  "purpose":"Include empty Level2 quotes? (default=false)"},
+    {"name":"AssignTo",           "kind":"namevalue", "type":["char","string"],     "purpose":"Variable in base workspace, updated live (default='')"}
   ]
 },
 "IQML":

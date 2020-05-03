@@ -1,3 +1,14 @@
+2.41 (2020-05-03)
+  - [*.*] Fixed: Timeout parameter was ignored when running within timer functions (now ok)
+  - [3.4] Detect & handle case of a missing 'Symbol' parameter, e.g. IQML('quotes','IBM')
+  - [5.*] Improved performance of history queries
+  - [6.*] Improved performance of IQML commands that start live data streaming
+  - [6.*] Added AssignTo parameter to enable assigning streaming data to base Matlab workspace variables
+  - [6.2] Fixed a bug in fetching streaming Regional quotes
+  - [6.3] Added BarTypeCode, EventDatenum, EventTimestamp fields to streaming intervalbars data
+  - [9.1] Faster and more robust initial connection to IQFeed
+  - [9.1] Added debug printouts to assist diagnosing IQFeed connection problems
+
 2.40 (2020-04-20)
   - [*.*] Fixed: enabled "symbol" in addition to 'symbol' (broken in version 2.39)
   - [4.1] Fixed bad results from parallel quotes query of duplicate symbols

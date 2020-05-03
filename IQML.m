@@ -30,6 +30,7 @@ function [data, errMsg] = IQML(action, parameters, varargin) %#ok
 %        MaxItems        (Integer) default=1; size of the reported buffer accumulating the latest streaming quotes/ticks
 %        Fields          (String or cell-array) list of data fields to be reported by IQML (default: 16 fields)
 %        ClearBuffer     (Logical) default=0 or false; if true or 1, internal cyclic quotes buffer is cleared when data is returned
+%        AssignTo        (String)  default=''; streaming data will be assigned to this variable in the base workspace, updated live
 %
 %     Interval bars:
 %        Symbols            (String :-delimited or cell-array) default=''; e.g., '@VX#' or 'IBM:GOOG' or {'IBM','GOOG'}
@@ -42,11 +43,13 @@ function [data, errMsg] = IQML(action, parameters, varargin) %#ok
 %        EndFilterTime      (String)  default='23:59:59'; latest   bar time
 %        BeginDateTime      (Integer or String) default=''; earliest bar date
 %        MaxUpdateDuration  (Integer) default=0; max # of secs to wait after a trade before receiving bar update message
+%        AssignTo           (String)  default=''; streaming data will be assigned to this variable in the base workspace, updated live
 %
 %     Market depth:
 %        Symbols            (String :-delimited or cell-array) default=''; e.g., '@VX#' or 'IBM:GOOG' or {'IBM','GOOG'}
 %        NumOfEvents        (Integer) default=inf; max # of IQFeed messages to process in streaming (non-blocking) data mode
 %        IncludeEmptyQuotes (Logical) default=0 or false; if true or 1, Level 2 quotes with no Bid/Ask will also be reported
+%        AssignTo           (String)  default=''; streaming data will be assigned to this variable in the base workspace, updated live
 %
 %     Greeks:
 %        Symbol               (String) default='';  e.g., 'IBM1814L116'
