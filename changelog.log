@@ -1,5 +1,5 @@
 2.42 (2020-05-04)
-  - [4.2] Fixed bug in fundamental data query
+  - [4.2] Fixed bug in fundamental data query 
 
 2.41 (2020-05-03)
   - [*.*] Fixed: Timeout parameter was ignored when running within timer functions (now ok)
