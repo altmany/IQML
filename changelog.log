@@ -1,3 +1,8 @@
+2.44 (2020-06-05)
+  - [3.6] Expanded the documentation of IQML parallelization (Pro license)
+  - [5.*] Fixed cases of parallel history queries returning empty results (Pro license)
+  - [7.2] Fixed various edge-cases with news headlines query (Pro license)
+
 2.43 (2020-05-10)
   - [5.*] When IQFeed has no history data for a query, IQML now returns [], not a 'NO_DATA' error
   - [9.1] Fixed edge case when disconnecting from a non-connected IQFeed
