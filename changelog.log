@@ -1,3 +1,8 @@
+2.45 (2020-06-23)
+  - [5.*] Added parameter checks: BeginDate < EndDate, BeginDateTime < EndDateTime
+  - [8.*] Removed duplicate lookup entries reported by IQFeed
+  - [8.1] Speedup of symbols lookup; enabled searching all symbols (empty Name parameter)
+
 2.44 (2020-06-05)
   - [3.6] Expanded the documentation of IQML parallelization (Pro license)
   - [5.*] Fixed cases of parallel history queries returning empty results (Pro license)
@@ -37,16 +42,16 @@
 2.38 (2020-04-14)
   - [*.*] Improved UseParallel robustness in some scenarios/edge cases (Pro license)
   - [2.2] Removed cross-check for IB-Matlab connector in deployed programs
-  - [7.2] Avoided error when IQFeed sends empty news headlines with no text
+  - [7.2] Avoided error when IQFeed sends empty news headlines with no text (Pro license)
 
 2.37 (2020-03-30)
   - [3.1]  Display a list of all valid parameters when warning about invalid specified parameter(s)
-  - [7.2]  Improved performance of news headline query
+  - [7.2]  Improved performance of news headline query (Pro license)
   - [10.1] Improved reporting of errors in user-specified callback function
 
 2.36 (2020-03-06)
-  - [7.2] Set the minimal Timeout to 60 secs when GetStory is requested
-  - [7.3] Report only unique symbols in a news story query (discard duplicates)
+  - [7.2] Set the minimal Timeout to 60 secs when GetStory is requested (Pro license)
+  - [7.3] Report only unique symbols in a news story query (discard duplicates) (Pro license)
 
 2.35 (2020-02-05)
   - [9.1] Fixed a connection conflict with IQFeed's Excel connector
@@ -68,7 +73,7 @@
 
 2.311 (2019-12-13)
   - [5.*] Fixed bug in parsing of reported history Datestamp field
-  - [7.2] Fixed bug in parsing of reported news Timestamp field
+  - [7.2] Fixed bug in parsing of reported news Timestamp field (Pro license)
 
 2.31 (2019-12-12)
   - [*.*] Fixed incompatibility with Matlab releases R2009a or older
@@ -243,7 +248,7 @@
   - [4.*] Modified reported data format when NumOfEvents>1, for consistency with other queries
   - [4.3] Added new blocking interval-bars functionality (in addition to streaming bars)
   - [6.*] Added Symbol field to returned streaming data struct
-  - [7.4] Story count for symbols that have no related news story is now reported as 0
+  - [7.4] Story count for symbols that have no related news story is now reported as 0 (Pro license)
   - [9.3] Added Exchanges, ServerVersion, ServiceType fields to client stats data
   - [11]  Fixed various things with the Alerts functionality
 
@@ -258,7 +263,7 @@
 1.22 (2018-08-13)
   - [3.2] Limited the Timeout parameter value to 0-3000 [secs]
   - [7.2] Fixed: when fetching multiple stories, an error in one does not stop processing others
-  - [7.3] Fixed edge-case of news story lines that start with "69," (very rare)
+  - [7.3] Fixed edge-case of news story lines that start with "69," (very rare) (Pro license)
   - [8.2] Enabled specifying options chain NearMonths of 0-12, not just 0-4
 
 1.21 (2018-08-09)
@@ -272,7 +277,7 @@
   - [3.2] Added RaiseErrorMsgs parameter to control if IQFeed errors should raise a Matlab error
 
 1.181 (2018-08-05)
-  - [7.2] Fixed edge-case of a news item that has an empty headline (very rare)
+  - [7.2] Fixed edge-case of a news item that has an empty headline (very rare) (Pro license)
 
 1.18 (2018-08-03)
   - [3.1] Added optional errorMsg output for IQML commands
@@ -297,16 +302,16 @@
 1.14 (2018-05-30)
   - [4.2] Enabled specifying multiple Symbols in a single Fundamental-data query
   - [6.2] Enabled specifying multiple Symbols in a single streaming Regional updates query
-  - [7.3] Enabled specifying multiple ID values in a single news story query
+  - [7.3] Enabled specifying multiple ID values in a single news story query (Pro license)
 
 1.131 (2018-05-27)
   - [3.1] Fixed bug in accepting struct-based input parameters
-  - [7.2] Fixed bug in the news headlines functionality
+  - [7.2] Fixed bug in the news headlines functionality (Pro license)
 
 1.13 (2018-05-25)
   - [12]  Added regional updates alert functionality (in addition to news/quote/intervalbar alerts)
   - [12]  Enabled reporting the full news story (in addition to headline) in news alerts
-  - [7.2] Enabled auto-fetch of full news story in news headlines query (streaming/blocking)
+  - [7.2] Enabled auto-fetch of full news story in news headlines query (streaming/blocking) (Pro license)
 
 1.12 (2018-05-23)
   - [12] Added alerts functionality (news/quote/intervalbar events via popup/console/email/callback)
@@ -344,14 +349,14 @@
   - Bug fixes
 
 1.04 (2018-04-01)
-  - [7.5] Added streaming news headlines functionality
+  - [7.5] Added streaming news headlines functionality (Pro license)
   - [6.2] Added streaming regional updates functionality
   - [2.1] Added support for native Mac IQFeed client (untested)
   - [5,6] Renamed BufferSize,MaxDataPoints parameters as MaxItems for consistency
   - [11]  Added timestamp and channel info to outgoing messages printout when Debug=1
   - [4.2] Added description fields for listed market, SIC and NAICS in fundamental data
   - [3.2] Added new MsgParsingLevel parameter for improved callback run-time performance
-  - [7.3] Added newline between separate paragraphs in reported news-story text for readability
+  - [7.3] Added newline between separate paragraphs in reported news-story text for readability (Pro license)
   - Multiple User Guide clarifications and additions
   - Bug fixes
 
@@ -361,9 +366,9 @@
   - [6.1] Enabled requesting streaming ticks/quotes for multiple symbols at once
 
 1.02 (2018-03-12):
-  - [7.2] Unified field names in returned news story/headline data
-  - [7.3] Added relevant symbols list in returned news story data
-  - [7.4] News count queries now use DataType of 'number', not 'story'
+  - [7.2] Unified field names in returned news story/headline data (Pro license)
+  - [7.3] Added relevant symbols list in returned news story data (Pro license)
+  - [7.4] News count queries now use DataType of 'number', not 'story' (Pro license)
 
 1.01 (2018-03-11):
   - [10] Enabled message-specific user callbacks
