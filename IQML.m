@@ -86,6 +86,7 @@ function [data, errMsg] = IQML(action, parameters, varargin) %#ok
 %        BeginDateTime   (Integer or String) default=''; earliest bar date (only relevant if DataType=interval or ticks)
 %        EndDateTime     (Integer or String) default=''; latest   bar date (only relevant if DataType=interval or ticks)
 %        Fields          (String or cell-array) list of data fields to be reported by IQML (default: all fields)
+%        Progress        (String)  default=''; if 'console', periodic update messages are displayed during data download
 %
 %     News:
 %        DataType        (String)  default='config'; one of 'config','headlines','story'
@@ -100,11 +101,12 @@ function [data, errMsg] = IQML(action, parameters, varargin) %#ok
 %        EndDate         (Integer or String) default=[]; latest date at which the news items were published
 %
 %     Lookup:
-%        DataType        (String)  default='symbols'; one of 'symbols','markets','sectypes','sic','naics','conditions'
-%        Name            (String)  default=''; Limits results to those containing this string in their name (case insensitive)
-%        Description     (String)  default=''; Limits results to those containing this string in their description (case insensitive)
-%        SIC             (Integer) default=[]; Limits results to those whose SIC   sector/industry code begins with this number
-%        NAICS           (Integer) default=[]; Limits results to those whose NAICS sector/industry code begins with this number
+%        DataType        (String)   default='symbols'; one of 'symbols','markets','sectypes','sic','naics','conditions'
+%        ID              (Integers) default=[]; Limits results to those with the specified ID(s)
+%        Name            (String)   default=''; Limits results to those containing this string in their name (case insensitive)
+%        Description     (String)   default=''; Limits results to those containing this string in their description (case insensitive)
+%        SIC             (Integer)  default=[]; Limits results to those whose SIC   sector/industry code begins with this number
+%        NAICS           (Integer)  default=[]; Limits results to those whose NAICS sector/industry code begins with this number
 %        Markets         (Integers or Strings) default=[]; Limits results to those in the specified market (exchange) name(s) or code(s)
 %        SecTypes        (Integers or Strings) default=[]; Limits results to those with the specified security type(s)
 %
