@@ -1,3 +1,18 @@
+2.48 (2020-12-02)
+  - [*.*] Fixed bug when trying to display PDF documents on MacOS
+  - [*.*] Fixed edge-case when retrieving data in parallel with UseParallel (Pro license)
+  - [3.6] Added MaxWorkers parameter to limit the number of active parallel workers (Pro license)
+  - [5.*] Increased default max number of parallel workers in history queries 14=>15 (Pro license)
+  - [5.6] Fixed bug in filtering numeric summary data when MsgParsingLevel=0 (Pro license)
+
+2.47 (2020-11-29)
+  - [3.6]  Fixed occasional errors with IQFeed connection of parallel workers (Pro license)
+  - [4.2]  Added Fiscal_Year_End_Description field to fundamental data results
+  - [5.6]  Clarified the error message when market summary data is not available (Pro license)
+  - [6.*]  Improved performance of fetching latest streaming quotes while streaming
+  - [8.2]  Handled cases of IQFeed server error when requesting options chain (Pro license)
+  - [12.2] Fixed error in case IQFeed client has not yet set the logging-level
+
 2.46 (2020-06-30)
   - [5.1] Fixed single-day history query (BeginDate=EndDate), broken in version 2.45
   - [5.*] Added the Progress input parameter to history queries
