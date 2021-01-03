@@ -23,6 +23,7 @@ function [data, errMsg] = IQML(action, parameters, varargin) %#ok
 %        RaiseErrorMsgs  (Logical) default=1 or true; if true or 1, IQFeed error messages raise a Matlab error in blocking query
 %        UseParallel     (Logical) default=0 or false; if true or 1, a blocking query will be parallelized (Pro license only)
 %        MaxWorkers      (Integer) default=inf; maximal numer of parallel workers to use in parallelized queries (UseParallel=true)
+%        OutputFormat    (String)  default='struct'; one of 'struct','cells','table','timetable'
 %
 %     Quotes/ticks:
 %        DataType        (String)  default='quotes'; either 'quotes' or 'trades'

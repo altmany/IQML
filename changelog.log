@@ -1,3 +1,8 @@
+2.49 (2021-01-03)
+  - [3.5]  Added OutputFormat parameter to report results in cell/struct/table/timetable formats
+  - [5.*]  Fixed certain problems with parallel download of historic data (Pro license)
+  - [12.1] Added display of context (input parameters, caller location) in case of run-time error
+
 2.48 (2020-12-02)
   - [*.*] Fixed bug when trying to display PDF documents on MacOS
   - [*.*] Fixed edge-case when retrieving data in parallel with UseParallel (Pro license)
