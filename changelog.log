@@ -1,3 +1,9 @@
+2.50 (2021-01-24)
+  - [8.1] Fixed symbols lookup query with empty/unspecified Name filter parameter
+  - [8.1] Added Progress parameter to display lookup query progress (as in history queries)
+  - [8.1] Added ability to filter symbols lookup query by market group (e.g. 'NYSE'), not just specific market(s)
+  - [8.2] Fixed: chain symbols query did not report some equity options unless NearMonths was set (Pro license)
+
 2.49 (2021-01-03)
   - [3.5]  Added OutputFormat parameter to report results in cell/struct/table/timetable formats
   - [5.*]  Fixed certain problems with parallel download of historic data (Pro license)
