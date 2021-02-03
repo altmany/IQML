@@ -1,3 +1,9 @@
+2.51 (2021-02-03)
+  - [7.*] Fixed problem with news query without a Symbol filter due to a DTN server-side change (Pro license)
+  - [7.2] Added Datenum field to news headlines query; fixed Timestamp field to standard format (Pro license)
+  - [9.1] Auto-reconnect IQML to IQFeed when IQConnect is not communicating
+  - [9.3] Added Datenum, Timestamp, TotalMsgsRcv fields to client stats data
+
 2.50 (2021-01-24)
   - [8.1] Fixed symbols lookup query with empty/unspecified Name filter parameter
   - [8.1] Added Progress parameter to display lookup query progress (as in history queries)
