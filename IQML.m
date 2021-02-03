@@ -104,6 +104,7 @@ function [data, errMsg] = IQML(action, parameters, varargin) %#ok
 %
 %     Lookup:
 %        DataType        (String)   default='symbols'; one of 'symbols','markets','sectypes','sic','naics','conditions'
+%        Progress        (String)   default=''; if 'console', periodic update messages are displayed during data download
 %        ID              (Integers) default=[]; Limits results to those with the specified ID(s)
 %        Name            (String)   default=''; Limits results to those containing this string in their name (case insensitive)
 %        Description     (String)   default=''; Limits results to those containing this string in their description (case insensitive)

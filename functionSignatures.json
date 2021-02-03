@@ -192,6 +192,7 @@
   [
     {"name":"action",      "kind":"required",  "type":["char","string", "choices={'lookup'}"], "purpose":"Processing action"},
     {"name":"DataType",    "kind":"namevalue", "type":["char","string", "choices={'symbols','markets','sectypes','SIC','NAICS'}"], "purpose":"Type of data items to lookup"},
+    {"name":"Progress",    "kind":"namevalue", "type":["char","string"], "purpose":"Display console progress msgs (default='')"},
     {"name":"ID",          "kind":"namevalue", "type":["numeric"],       "purpose":"Limit results to the specified ID(s)"},
     {"name":"Name",        "kind":"namevalue", "type":["char","string"], "purpose":"Limit results to names containing this string"},
     {"name":"Description", "kind":"namevalue", "type":["char","string"], "purpose":"Limit results to descriptions containing this string"},
