@@ -163,7 +163,9 @@
     {"name":"action",             "kind":"required",  "type":["char","string", "choices={'MarketDepth'}"], "purpose":"Processing action"},
     {"name":"Symbol",             "kind":"namevalue", "type":["char","string","cellstr"], "purpose":"IQFeed symbol(s)"},
     {"name":"NumOfEvents",        "kind":"namevalue", "type":["numeric","integer"], "purpose":"# of quotes to process (default=10)"},
+    {"name":"MaxLevels",          "kind":"namevalue", "type":["numeric","integer"], "purpose":"# of price levels to return (default=5)"},
     {"name":"IncludeEmptyQuotes", "kind":"namevalue", "type":["logical","scalar"],  "purpose":"Include empty Level2 quotes? (default=false)"},
+    {"name":"Detailed",           "kind":"namevalue", "type":["logical","scalar"],  "purpose":"Display orders/marker-makers? (default=false)"},
     {"name":"AssignTo",           "kind":"namevalue", "type":["char","string"],     "purpose":"Variable in base workspace, updated live (default='')"}
   ]
 },

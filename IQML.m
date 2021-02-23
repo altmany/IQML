@@ -50,7 +50,9 @@ function [data, errMsg] = IQML(action, parameters, varargin) %#ok
 %     Market depth:
 %        Symbols            (String :-delimited or cell-array) default=''; e.g., '@VX#' or 'IBM:GOOG' or {'IBM','GOOG'}
 %        NumOfEvents        (Integer) default=inf; max # of IQFeed messages to process in streaming (non-blocking) data mode
+%        MaxLevels          (Integer) default=5;   max # of price levels (rows) to return
 %        IncludeEmptyQuotes (Logical) default=0 or false; if true or 1, Level 2 quotes with no Bid/Ask will also be reported
+%        Detailed           (Logical) default=0 or false: if true or 1, price level components (orders/market-makers) will be reported
 %        AssignTo           (String)  default=''; streaming data will be assigned to this variable in the base workspace, updated live
 %
 %     Greeks:
