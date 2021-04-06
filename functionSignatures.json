@@ -32,7 +32,9 @@
     {"name":"MsgParsingLevel", "kind":"namevalue", "type":["numeric","integer", "choices={0,1,2}"], "purpose":"parsing level of IQFeed msgs (default=2=maximal)"},
     {"name":"ProcessFunc",     "kind":"namevalue", "type":["struct","function_handle"], "purpose":"callback function of IQFeed msgs"},
     {"name":"RaiseErrorMsgs",  "kind":"namevalue", "type":["logical","scalar"], "purpose":"Matlab error upon IQFeed error? (default=true)"},
-    {"name":"OutputFormat",    "kind":"namevalue", "type":["char","string", "choices={'cells','struct','table','timetable'}"], "purpose":"Results data format (default=struct)"}
+    {"name":"OutputFormat",    "kind":"namevalue", "type":["char","string", "choices={'cells','struct','table','timetable'}"], "purpose":"Results data format (default=struct)"},
+    {"name":"MaxEventsBacklog","kind":"namevalue", "type":["numeric","integer",">0"], "purpose":"Backlog size to trigger overflow protection (default=100)"},
+    {"name":"OverflowMode",    "kind":"namevalue", "type":["numeric","integer"],      "purpose":"0=none; 1=drop new msgs; 2=drop old msgs from backlog"}
   ]
 },
 "IQML":

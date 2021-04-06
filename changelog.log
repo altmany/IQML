@@ -1,10 +1,17 @@
+2.53 (2021-04-06)
+  - [3.6] Added message overflow protection (MaxEventsBacklog, OverflowMode parameters)
+  - [4.4] Improved support for new IQFeed client 6.2 Level-2 market-depth format (Pro license)
+  - [4.6] Added description fields for Exchange/Markets/SIC/NAICS codes (Pro license)
+  - [9.3] Added message overflow protection information to reported client stats
+  - [11]  Fixed: the alert ID was not properly returned in alert queries (Pro license)
+
 2.52 (2021-02-23)
   - [4.4] Added support for new IQFeed client 6.2 Level-2 market-depth format (Pro license)
   - [4.4] Added Detailed, MaxLevels parameters for Level 2 queries (Pro license)
   - [4.4] Added BidSizeRatio, AskSizeRatio fields to Level 2 data (Pro license)
   - [4.6] Fetch previous day's summary data if data for requested date is unavailable (Pro license)
   - [7.2] Handled edge case of news headlines that are reported with missing/invalid timestamp
-  - [9.1] Avoid repeated attempts to launch IQConnect client on startup, when it is not in expected location
+  - [9.1] Avoid repeated attempts to launch the IQFeed client on startup, when it is not in expected location
   - [9.1] Added alert when the installed IQFeed client is older than latest available stable IQFeed client
   - [9.5] Added support for IQFeed client 6.2's new registry hive
 

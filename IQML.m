@@ -24,6 +24,8 @@ function [data, errMsg] = IQML(action, parameters, varargin) %#ok
 %        UseParallel     (Logical) default=0 or false; if true or 1, a blocking query will be parallelized (Pro license only)
 %        MaxWorkers      (Integer) default=inf; maximal numer of parallel workers to use in parallelized queries (UseParallel=true)
 %        OutputFormat    (String)  default='struct'; one of 'struct','cells','table','timetable'
+%        MaxEventsBacklog(Integer) default=100; size of backlog above which overflow protection is active
+%        OverflowMode    (Integer) default=[]; 0=no overflow handling (all msgs processed); 1=drop new msgs; 2=drop old backlog msgs
 %
 %     Quotes/ticks:
 %        DataType        (String)  default='quotes'; either 'quotes' or 'trades'
