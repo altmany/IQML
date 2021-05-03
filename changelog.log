@@ -1,3 +1,8 @@
+2.54 (2021-05-03)
+  - [4.5] Fixed: the implied volatility was sometimes incorrectly reported as +/-inf
+  - [5.*] Added EndDate parameter for weekly/monthly history queries (as in daily/interval)
+  - [5.*] Fixed BeginDate/EndDate/MaxItems parameter inconsistencies in history queries
+
 2.53 (2021-04-06)
   - [3.6] Added message overflow protection (MaxEventsBacklog, OverflowMode parameters)
   - [4.4] Improved support for new IQFeed client 6.2 Level-2 market-depth format (Pro license)

@@ -82,7 +82,7 @@ function [data, errMsg] = IQML(action, parameters, varargin) %#ok
 %        DataDirection   (Integer) default=1; either 1 (oldest-to-newest, default) or -1 (newest-to-oldest)
 %        MaxItems        (Integer) default=100; returns up to the specified # of bars
 %        BeginDate       (Integer or String) default=[]; earliest bar date (only relevant if DataType=day/week/month)
-%        EndDate         (Integer or String) default=[]; latest   bar date (only relevant if DataType=day)
+%        EndDate         (Integer or String) default=[]; latest   bar date (only relevant if DataType=day/week/month)
 %        IntervalType    (String)  default='secs'; one of secs,volume,ticks (only relevant if DataType=interval)
 %        IntervalSize    (Integer) default=60; size of interval bars in seconds (only relevant if DataType=interval)
 %        LabelAtBeginning(Logical) default=0 or false; if true or 1, 11:17:41 data is reported in '11:17' bar (otherwise: '11:18')
