@@ -1,3 +1,8 @@
+2.55 (2021-05-10)
+  - [2.1] Added Filepath field to the output of IQML('version')
+  - [5.*] Fixed problem of empty data reported when MaxItems = -1
+  - [9.1] Added Timeout parameter to IQML('reconnect') actions
+
 2.54 (2021-05-03)
   - [4.5] Fixed: the implied volatility was sometimes incorrectly reported as +/-inf
   - [5.*] Added EndDate parameter for weekly/monthly history queries (as in daily/interval)
