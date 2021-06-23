@@ -1,3 +1,9 @@
+2.56 (2021-06-23)
+  - [*.*]  Fixed occasional "corrupt P-file" errors in parallel setups (Pro license)
+  - [2.4]  Automatically disconnect from IQFeed when installing an IQML update
+  - [4.6]  Fixed: summary data query sometimes reported missing data (Pro license)
+  - [12.1] Simplified reported message in case of an IQML run-time error
+
 2.55 (2021-05-10)
   - [2.1] Added Filepath field to the output of IQML('version')
   - [5.*] Fixed problem of empty data reported when MaxItems = -1
