@@ -1,3 +1,10 @@
+2.57 (2021-07-11)
+  - [7.2] Fixed: Timeout parameter was not used by news story queries when GetStory=true (Pro license)
+  - [7.3] Fixed edge cases of some news stories reported as errors by IQConnect client 6.1 (Pro license)
+  - [7.3] Added URL field to reported news stories, if a URL is detected in the story text (Pro license)
+  - [7.*] Improved performance (reduced run-time) of news story queries, esp. story texts (Pro license)
+  - [9.1] Removed some harmless warning messages upon IQML connection to IQFeed
+
 2.56 (2021-06-23)
   - [*.*]  Fixed occasional "corrupt P-file" errors in parallel setups (Pro license)
   - [2.4]  Automatically disconnect from IQFeed when installing an IQML update
