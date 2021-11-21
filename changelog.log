@@ -1,3 +1,11 @@
+2.58 (2021-11-21)
+  - [*.*] Replaced all references to iqml.net with undocumentedmatlab.com
+  - [4.4] Fixed display of the market-maker description in MarketDepth (Level2) queries (Pro license)
+  - [6.1] Clarified warning when requesting streaming quotes for more symbols than IQFeed allows
+  - [9.1] Added display of client and protocol versions in connection success message
+  - [9.1] Handled unsolicited changes of MacBookPro computer name by MacOS, affecting IQML's activation
+  - [9.3] Added fields for protocol version, # usable symbols, IQFeed expiry date (for DTN trial users)
+
 2.57 (2021-07-11)
   - [7.2] Fixed: Timeout parameter was not used by news story queries when GetStory=true (Pro license)
   - [7.3] Fixed edge cases of some news stories reported as errors by IQConnect client 6.1 (Pro license)
