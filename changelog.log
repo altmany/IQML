@@ -1,4 +1,10 @@
+2.59 (2021-12-14)
+  - [*.*] Added new possible formats of date parameters e.g. '21/11/15', 'Nov 15', '15-Nov-2021'
+  - [2.2] Added 'validate' action: returns true if IQML license is ok, error (or errMsg) if not
+  - [7.2] Fixed: News headlines request returned partial results on Matlab R2021b (Pro license)
+
 2.58 (2021-11-21)
+  -  *** Important note: this version may require reactivation on Windows (but not MacOS/Linux) ***
   - [*.*] Replaced all references to iqml.net with undocumentedmatlab.com
   - [4.4] Fixed display of the market-maker description in MarketDepth (Level2) queries (Pro license)
   - [6.1] Clarified warning when requesting streaming quotes for more symbols than IQFeed allows

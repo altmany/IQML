@@ -162,7 +162,7 @@ function [data, errMsg] = IQML(action, parameters, varargin) %#ok
 % AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT
 % OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 %
-% Copyright (c) Yair Altman, Octahedron Ltd. (info @ IQML.net)
+% Copyright (c) Yair Altman, Octahedron Ltd. (info @ undocumentedmatlab.com)
 %
-% IQML webpage: http://IQML.net
+% IQML webpage: http://undocumentedmatlab.com/IQML
 % DTN IQFeed webpage: http://iqfeed.net
