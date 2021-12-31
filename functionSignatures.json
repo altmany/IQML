@@ -224,7 +224,8 @@
     {"name":"NumInMoney",    "kind":"namevalue", "type":["numeric"], "purpose":"Only report this # of options in the money (default=[])"},
     {"name":"NumOutOfMoney", "kind":"namevalue", "type":["numeric"], "purpose":"Only report this # of options out of money (default=[])"},
     {"name":"MaxWorkers",    "kind":"namevalue", "type":["numeric","integer",">0"],  "purpose":"Max # of parallel workers to use (default=inf)"},
-    {"name":"UseParallel",   "kind":"namevalue", "type":["logical","scalar"], "purpose":"Process data in parallel? (default=false)"}
+    {"name":"UseParallel",   "kind":"namevalue", "type":["logical","scalar"], "purpose":"Process data in parallel? (default=false)"},
+    {"name":"Fields",        "kind":"namevalue", "type":["char","string","cellstr"], "purpose":"Data fields to report"}
   ]
 },
 "IQML":

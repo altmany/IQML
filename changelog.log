@@ -1,3 +1,8 @@
+2.60 (2021-12-31)
+  - [*.*] Fixed bug in parsing of default BeginDate parameter value
+  - [*.*] Improved reporting of invalid date/time parameter values
+  - [8.2] Added settable Fields parameter to option chains query (Pro license)
+
 2.59 (2021-12-14)
   - [*.*] Added new possible formats of date parameters e.g. '21/11/15', 'Nov 15', '15-Nov-2021'
   - [2.2] Added 'validate' action: returns true if IQML license is ok, error (or errMsg) if not

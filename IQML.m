@@ -32,7 +32,7 @@ function [data, errMsg] = IQML(action, parameters, varargin) %#ok
 %        Symbols         (String :-delimited or cell-array) default=''; e.g., '@VX#' or 'IBM:GOOG' or {'IBM','GOOG'}
 %        NumOfEvents     (Integer) default=inf; max # of IQFeed messages to process in streaming (non-blocking) data mode
 %        MaxItems        (Integer) default=1; size of the reported buffer accumulating the latest streaming quotes/ticks
-%        Fields          (String or cell-array) list of data fields to be reported by IQML (default: 16 fields)
+%        Fields          (String or cell-array) list of data fields to be reported by IQML (default: 16 fields, Pro license only)
 %        ClearBuffer     (Logical) default=0 or false; if true or 1, internal cyclic quotes buffer is cleared when data is returned
 %        AssignTo        (String)  default=''; streaming data will be assigned to this variable in the base workspace, updated live
 %
@@ -91,7 +91,7 @@ function [data, errMsg] = IQML(action, parameters, varargin) %#ok
 %        EndFilterTime   (String)  default='23:59:59'; latest   bar time (only relevant if DataType=interval or ticks)
 %        BeginDateTime   (Integer or String) default=''; earliest bar date (only relevant if DataType=interval or ticks)
 %        EndDateTime     (Integer or String) default=''; latest   bar date (only relevant if DataType=interval or ticks)
-%        Fields          (String or cell-array) list of data fields to be reported by IQML (default: all fields)
+%        Fields          (String or cell-array) list of data fields to be reported by IQML (default: all fields, Pro license only)
 %        Progress        (String)  default=''; if 'console', periodic update messages are displayed during data download
 %
 %     News:
@@ -130,6 +130,7 @@ function [data, errMsg] = IQML(action, parameters, varargin) %#ok
 %        MaxStrike       (Number)  default=[]; only report options having lower  strike price; only relevant when DataType='options'.
 %        NumInMoney      (Integer) default=[]; only report this number of options in the money; only relevant if DataType='options'.
 %        NumOutOfMoney   (Integer) default=[]; only report this number of options out of money; only relevant if DataType='options'.
+%        Fields          (String or cell-array) list of data fields to be reported by IQML (default: 16 fields, Pro license only)
 %
 %     Alert:
 %        Symbols         (String :-delimited or cell-array) default=''; e.g., 'FB' or 'IBM:GOOG' or {'IBM','GOOG'}
