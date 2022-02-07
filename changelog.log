@@ -1,3 +1,8 @@
+2.61 (2022-02-07)
+  - [2.2] Fixed IQML activation problem on a Matlab pre-release
+  - [2.4] Removed harmless warning message during version update about overwriting files
+  - [9.1] Automatically reconnect bad IQFeed connection (invalid "no data for query" error)
+
 2.60 (2021-12-31)
   - [*.*] Fixed bug in parsing of default BeginDate parameter value
   - [*.*] Improved reporting of invalid date/time parameter values
