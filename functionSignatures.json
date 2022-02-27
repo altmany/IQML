@@ -200,6 +200,7 @@
     {"name":"ID",          "kind":"namevalue", "type":["numeric"],       "purpose":"Limit results to the specified ID(s)"},
     {"name":"Name",        "kind":"namevalue", "type":["char","string"], "purpose":"Limit results to names containing this string"},
     {"name":"Description", "kind":"namevalue", "type":["char","string"], "purpose":"Limit results to descriptions containing this string"},
+    {"name":"ForceRefresh","kind":"namevalue", "type":["logical","scalar"], "purpose":"Refetch data from IQFeed? (default=false)"},
     {"name":"Market",      "kind":"namevalue", "type":["char","string","cellstr","numeric"], "purpose":"Limit results to the specified market code/name"},
     {"name":"SecType",     "kind":"namevalue", "type":["char","string","cellstr","numeric"], "purpose":"Limit results to the specified sec-type code/name"},
     {"name":"SIC",         "kind":"namevalue", "type":["char","string","cellstr","numeric"], "purpose":"Limit results to the specified SIC sector/industry code"},

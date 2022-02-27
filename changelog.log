@@ -1,3 +1,10 @@
+2.62 (2022-02-27)
+  - [*.*] Fixed processing of various non-standard date parameters formats/variants
+  - [5.*] Fixed the reported ticker in error message about a failed history query
+  - [5.2] Fixed weekly/monthly historic data when MaxItems=-1 (all data points) and non-default BeginDate
+  - [8.*] Fixed: lookup queries sometimes returned cell array instead of struct array
+  - [8.*] Added ForceRefresh parameter to lookup queries: force a data refresh from IQFeed (bypass cache)
+
 2.61 (2022-02-07)
   - [2.2] Fixed IQML activation problem on a Matlab pre-release
   - [2.4] Removed harmless warning message during version update about overwriting files

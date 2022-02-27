@@ -112,6 +112,7 @@ function [data, errMsg] = IQML(action, parameters, varargin) %#ok
 %        ID              (Integers) default=[]; Limits results to those with the specified ID(s)
 %        Name            (String)   default=''; Limits results to those containing this string in their name (case insensitive)
 %        Description     (String)   default=''; Limits results to those containing this string in their description (case insensitive)
+%        ForceRefresh	 (Logical)  default=false; refetch the lookup data from IQFeed (true) or use pre-cached values (false)?
 %        SIC             (Integer)  default=[]; Limits results to those whose SIC   sector/industry code begins with this number
 %        NAICS           (Integer)  default=[]; Limits results to those whose NAICS sector/industry code begins with this number
 %        Markets         (Integers or Strings) default=[]; Limits results to those in the specified market (exchange) name(s) or code(s)
