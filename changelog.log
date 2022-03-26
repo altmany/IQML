@@ -1,6 +1,10 @@
+2.63 (2022-03-26)
+  - [4.3 etc.] Fixed a parsing problem with DateTime parameters that contain spaces
+  - [6.1] Fixed possible error when requesting streaming quotes with non-standard Fields immediately on IQML connection
+
 2.62 (2022-02-27)
   - [*.*] Fixed processing of various non-standard date parameters formats/variants
-  - [5.*] Fixed the reported ticker in error message about a failed history query
+  - [5.*] Fixed the reported symbol in error message about a failed history query
   - [5.2] Fixed weekly/monthly historic data when MaxItems=-1 (all data points) and non-default BeginDate
   - [8.*] Fixed: lookup queries sometimes returned cell array instead of struct array
   - [8.*] Added ForceRefresh parameter to lookup queries: force a data refresh from IQFeed (bypass cache)
