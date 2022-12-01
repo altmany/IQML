@@ -1,3 +1,13 @@
+2.65 (2022-11-30)
+  - [9.1] Improved initial connection time of parallel workers (Pro license)
+
+2.64 (2022-10-11)
+  - [4.3, 6.3] Fixed field name typo: CummlativeVolume -> CumulativeVolume
+  - [4.6] Added documentation of IQFeed's market indices & calculated breadth/indicator stats
+  - [6.1] Added warning when setting Fields in ongoing data-fetch query of a streaming request
+  - [8.1] Fixed: symbol lookup query returned empty when IQFeed reported just a single result
+  - [*.*] Small speedup of IQFeed messages processing
+
 2.63 (2022-03-26)
   - [4.3 etc.] Fixed a parsing problem with DateTime parameters that contain spaces
   - [6.1] Fixed possible error when requesting streaming quotes with non-standard Fields immediately on IQML connection
