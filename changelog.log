@@ -1,3 +1,7 @@
+2.67 (2023-08-16)
+  - [4.6] Scanner Filter parameter now accepts 'or','and' as criteria operators (Pro license)
+  - [9.1] Improved robustness when connecting multiple parallel workers to IQFeed (Pro license)
+
 2.66 (2023-03-26)
   - [2.2] Improved license fingerprint stability for MacOS users
 
