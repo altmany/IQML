@@ -1,3 +1,7 @@
+2.68 (2023-11-06)
+  - [2.2] Fixed missing timeout when checking IQML license on Matlab R2023b
+  - [9.1] Avoid messages about missing registry on non-Windows computers
+
 2.67 (2023-08-16)
   - [4.6] Scanner Filter parameter now accepts 'or','and' as criteria operators (Pro license)
   - [9.1] Improved robustness when connecting multiple parallel workers to IQFeed (Pro license)
