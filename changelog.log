@@ -1,3 +1,8 @@
+2.69 (2025-01-02)
+  - [2.1] Added support for OpenJDK, in addition to Oracle JRE8 (not fully tested!)
+  - [3.5] Enabled OutputFormat 'table' and 'timetable' for multi-symbol queries
+  - [4.4] Improved performance and error resilience of market-depth query (Pro license)
+
 2.68 (2023-11-06)
   - [2.2] Fixed missing timeout when checking IQML license on Matlab R2023b
   - [9.1] Avoid messages about missing registry on non-Windows computers
