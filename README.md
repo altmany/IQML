@@ -1,6 +1,6 @@
 IQML
 ====
-
+ 
 A toolbox for connecting MATLAB to DTN IQFeed, to retrieve financial market data and news.
 
 ![IQML](https://undocumentedmatlab.com/images/IQML.png)
