@@ -620,8 +620,8 @@ THIS SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESSED O
 (A detailed disclaimer is available in [IQML’s User Guide](https://undocumentedmatlab.com/files/IQML/IQML_User_Guide.pdf), as well as in the separate [DISCLAIMER](https://github.com/altmany/IQML/blob/master/DISCLAIMER) file)
 
 ### Contact us
-For additional information about IQML, please visit the product's webpage (http://IQML.net or https://undocumentedmatlab.com/IQML).
+For additional information about IQML, please visit the product's webpage (https://undocumentedmatlab.com/IQML).
 
-If you have any question or feedback, or need professional assistance in integrating IQML into your trading system, please email us (info@IQML.net) and we will be happy to help.
+If you have any question or feedback, or need professional assistance in integrating IQML into your trading system, please email us (info@undocumentedmatlab.com) and we will be happy to help.
 
 ![](https://undocumentedmatlab.com/images/choose_any_5_animated.gif)
