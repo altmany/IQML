@@ -25,7 +25,7 @@ This downloaded version is fully-functional and can run for 30 days for free. If
 
 ### Main functionalities
 Simple Matlab commands fetch market data from IQFeed, in either blocking (snapshot) or non-blocking (streaming) modes:
- * Live top-of-book market data (quotes and trades)
+ * Live Level1 top-of-book market data (quotes and trades)
  * Live Level2 market-depth data
  * Historic, intra-day and live market data (individual ticks or interval bars)
  * Fundamental info on assets
@@ -33,9 +33,9 @@ Simple Matlab commands fetch market data from IQFeed, in either blocking (snapsh
  * Options and futures chains lookup (with market data, Greeks)
  * Symbols and market codes lookup
  * News headlines, story-counts and complete news stories, with user-specified filters
- * Connection stats and programmatic connect/disconnect
  * Ability to attach user-defined Matlab callback functions to IQFeed messages and market events
  * User-defined custom alerts on streaming market events (news/quotes/interval-bar/regional triggers)
+ * Connection stats and programmatic connect/disconnect
  * Combine all of the above for a full-fledged end-to-end automated trading system using plain Matlab
  
 ### Additional program features
@@ -47,6 +47,7 @@ Simple Matlab commands fetch market data from IQFeed, in either blocking (snapsh
  * **Settable market alerts** – Users can define custom alerts on streaming news/quotes/interval-bars/regional-updates, which can be reported in various ways (popup window, console message, email, text (SMS) message, or Matlab callback function).
  * **User callbacks** – Users can attach Matlab code (callbacks) to IQFeed messages. For example, this enables adding an entry in an Excel file, or sending an email, whenever a stock reaches a certain price or trade volume (also note the related alerts functionality).
  * **Security** – IQML does not transmit any information externally except to IQFeed, so your trading information are as safe as your own computer.
+ * **Compilable** – IQML can be compiled into a standalone executable or program component, running as an integral part of your deployed program.
  * **Performance** – IQML is optimized for performance, providing fast and responsive connectivity. While Matlab as a platform is not well-suited for HFT, IQML enables receiving hundreds of streaming quotes or other IQFeed messages per second, with message latencies as low as 1ms and parallelization supported.
  * **Development** – IQML was developed by an acknowledged Matlab expert, who wrote the reference textbooks on Matlab-Java connectivity and Matlab performance, as well as the acclaimed IB-Matlab connector (Matlab connector to Interactive Brokers). IQML is continuously improved and maintained.
  * **Support** – Custom development and ongoing support is available directly from the developer, with extremely fast response times.
@@ -55,14 +56,14 @@ Simple Matlab commands fetch market data from IQFeed, in either blocking (snapsh
 
 ### Requirements
 IQML is a Matlab connector to IQFeed, so it naturally needs the user to have both
- * a locally-installed Matlab
+ * a locally-installed Matlab (no toolbox is required) or MCR (for a compiled application)
  * a locally-installed IQFeed client (IQConnect)
  * an active IQFeed data account
 
 ### Compatibility
  * Platforms: IQML works on all platforms on which IQFeed runs: Windows, Mac OS, Linux.
- * IQFeed: IQML works with all recent IQFeed installations, including the latest IQFeed API (6.1).
- * Matlab: IQML works on all Matlab releases since 2008, including the latest release (R2019b).
+ * IQFeed: IQML works with all recent IQFeed installations, including the latest IQFeed API (6.2).
+ * Matlab: IQML works on all Matlab releases since 2008, including the latest release (R2025a).
 
 ### Installation
  1. Download or clone IQML into a local folder on your computer (preferably a separate IQML folder)

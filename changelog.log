@@ -1,3 +1,7 @@
+2.70 (2025-05-21)
+  - [2.2] Detect & handle anti-bot recaptcha verification prompts
+  - [9.1] Attempt to auto-run IQConnect client on Mac/Linux, if not running already
+
 2.69 (2025-01-02)
   - [2.1] Added support for OpenJDK, in addition to Oracle JRE8 (not fully tested!)
   - [3.5] Enabled OutputFormat 'table' and 'timetable' for multi-symbol queries
